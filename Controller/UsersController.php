@@ -29,7 +29,6 @@ class UsersController extends AppController {
 
 	public function index($value='')
 	{
-		# code...
 	}
 
     public function add(){

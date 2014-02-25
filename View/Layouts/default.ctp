@@ -46,9 +46,23 @@
 				</div>
 
         		<div class="navbar-collapse collapse" id="navbar-main">
-          			<ul class="nav navbar-nav">
+          	<!--		<ul class="nav navbar-nav">
 						<li class="active"><a href="/posts/">Student</a></li>
 						<li><a href="/posts/add">Teacher</a></li>
+					</ul> -->
+					<ul class="nav navbar-nav navbar-right">
+						<?php if ($this->Session->read('Auth.User')): ?>
+						<li><a href="/users/logout">Logout</a></li>
+						<?php  else : ?>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Student</a></li>
+                                <li><a href="#">Teacher</a></li>
+                            </ul>
+						</li>
+						<li><a href="/users/login">Login</a></li>
+						<?php endif ?>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>

@@ -29,4 +29,20 @@ class AppController extends Controller {
 		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
 		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
 	);
+	public $components = array(
+	'Auth' => array(
+		'flash' => array(
+			'element' => 'alert',
+			'key' => 'auth',
+			'params' => array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-error'
+			),
+			#'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
+       		#'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+		)
+	),
+	'Session'
+);
+
 }
