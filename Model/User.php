@@ -16,24 +16,29 @@ class User extends AppModel {
             'required' => array(
                 'rule' => array('notEmpty'),
                 'message' => 'A password is required'
-            )
+            ),
+            'lenght' => array(
+                'rule'    => array('minLength', '8'),
+                'message' => 'Minimum 8 characters long'
+            ),
+                        
         ),
         'role' => array(
             'valid' => array(
-                'rule' => array('inList', array('admin', 'author')),
+                'rule' => array('inList', array('student', 'teacher','manager')),
                 'message' => 'Please enter a valid role',
                 'allowEmpty' => false
             )
         )
     );
-    public $hasMany = array(
-        'Post' => array(
-            'className' => 'Post'
-        )
-    );
+    public $hasOne = array( 
+            'Lecturer' => array(
+            'className' => 'Lecturer',
+            'foreignKey' => 'id'
+            )
+        );
 
     public function beforeSave($options = array()) {
-        var_dump($this->data[$this->alias]['password']);
         if (isset($this->data[$this->alias]['password'])) {
             $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
         }

@@ -34,7 +34,6 @@ class UsersController extends AppController {
     public function add(){
     	if($this->request->is('post')){
     		$this->User->create();
-    		var_dump($this->request->data);
     		if($this->User->save($this->request->data)){
     			$this->Session->setFlash(__('The user has been saved'), 'alert', array(
 					'plugin' => 'BoostCake',

@@ -58,7 +58,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Student</a></li>
-                                <li><a href="#">Teacher</a></li>
+                                <li><a href="/lecturer/add">Teacher</a></li>
                             </ul>
 						</li>
 						<li><a href="/users/login">Login</a></li>
