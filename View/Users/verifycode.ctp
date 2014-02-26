@@ -9,7 +9,7 @@
     'wrapInput' => false,  
     'class' => 'form-control',  
   ),  
-  'class' => 'well form-inline',  
+  'class' => 'well',  
 )); ?>  
   <?php echo $this->Form->input('username', array(  
     'placeholder' => 'Email',  
@@ -19,6 +19,20 @@
     'placeholder' => 'Password',  
     'style' => 'width:180px;' 
   )); ?> 
+  <div class="form-group">
+    <?php echo $this->Form->input('Lecturer.question_verifycode_id', array(    
+    'style' => 'width:180px;',
+    'label' => 'Question',
+    'options' => $droplist,
+    )); ?>  
+  </div>
+  <div class="form-group">
+    <?php echo $this->Form->input('Lecturer.current_verifycode', array(  
+    'placeholder' => 'Answer',  
+    'style' => 'width:180px;',
+    'label' => 'Answer'
+    )); ?>  
+  </div>
   <?php echo $this->Form->submit('Sign in', array(  
     'div' => false,  
     'class' => 'btn btn-default'  

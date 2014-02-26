@@ -38,8 +38,8 @@ class AppController extends Controller {
 				'plugin' => 'BoostCake',
 				'class' => 'alert-error'
 			),
-			#'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
-       		#'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+			'loginRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+       		'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
 		)
 	),
 	'Session'

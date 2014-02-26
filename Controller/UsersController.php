@@ -21,10 +21,11 @@
  */
 
 class UsersController extends AppController {
-
+	var $uses = array('User', 'Lecturer','Question');
 	public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add');
+        $this->Auth->allow('verifycode');
     }
 
 	public function index($value='')
@@ -50,8 +51,19 @@ class UsersController extends AppController {
     }
  
 	public function login() {
+
+	   	if($this->Auth->loggedIn()){
+      	  $this->redirect('/');
+    	}
+
 	    if ($this->request->is('post')) {
 	        if ($this->Auth->login()) {
+	        	$user = $this->Auth->user();
+	        	if($user['role'] == 'lecturer' && $this->request->clientIp() != $user['Lecturer']['ip_address'])
+	        	{
+	        		$this->redirect(array('controller'=>'Users','action'=>'verifycode'));
+	        	}
+
 	            return $this->redirect($this->Auth->redirect());
 	        }
 	        $this->Session->setFlash(__('Invalid username or password, try again'), 'alert', array(
@@ -65,6 +77,43 @@ class UsersController extends AppController {
 		return $this->redirect($this->Auth->logout());
 	}
 
+	public function verifycode($value='')
+	{
+	
+		$this->Auth->logout();
+		$questions = $this->Question->find('all');
+    	$droplist = array();
+    	foreach ($questions as $question) {
+     		$droplist[$question['Question']['id']] = $question['Question']['question'];
+    	}
+    	$this->set('droplist', $droplist);
+	
 
+		if ($this->request->is('post')) {
+			$data = ($this->request->data);
+			if ($this->Auth->login()) {
+				$user = $this->Auth->user();
+				if($user['role'] == 'lecturer' && $data['Lecturer']['question_verifycode_id'] == $user['Lecturer']['question_verifycode_id'] 
+					 && $data['Lecturer']['current_verifycode'] == $user['Lecturer']['current_verifycode']){
+					$this->Lecturer->id = $this->Auth->user('id');
+					if ($this->Lecturer->saveField('ip_address',$this->request->clientIp())) {
+						$this->Session->setFlash(__('The new ip address has been saved'));
+					} else {
+						$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'alert', array(
+													'plugin' => 'BoostCake',
+													'class' => 'alert-warning'
+												));
+					}
+				}
+				else
+					$this->Auth->logout();
+				return $this->redirect($this->Auth->redirect());
+			}
 
+			$this->Session->setFlash(__('Invalid username or password, try again'), 'alert', array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-warning'
+			));
+		}
+	}
 }

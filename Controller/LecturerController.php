@@ -9,6 +9,9 @@ class LecturerController extends AppController {
 
     public function add(){
     	
+    	if($this->Auth->loggedIn()){
+      	  $this->redirect('/');
+    	}
     	$questions = $this->Question->find('all');
     	$droplist = array();
     	foreach ($questions as $question) {
@@ -17,6 +20,8 @@ class LecturerController extends AppController {
     	$this->set('droplist', $droplist);
 		if($this->request->is('post')){
 			$this->User->create();
+			$this->request->data['Lecturer']['ip_address'] = $this->request->clientIp();
+			$this->request->data['Lecturer']['role'] = 'lecturer';
 			if($this->User->saveAll($this->request->data)){
 				$this->Session->setFlash(__('The user has been saved'), 'alert', array(
 					'plugin' => 'BoostCake',
