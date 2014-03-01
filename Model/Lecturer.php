@@ -1,6 +1,7 @@
 <?php 
 class Lecturer extends AppModel {
 	public $hasOne = 'User';
+	public $hasMany = 'Lesson';
 	public $validate = array(
 		'full_name' => array(
 			'required' => array(

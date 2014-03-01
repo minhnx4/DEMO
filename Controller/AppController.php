@@ -42,7 +42,8 @@ class AppController extends Controller {
        		'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
 		)
 	),
-	'Session'
-);
+	'Session',
+	'DebugKit.Toolbar',
+	);
 
 }

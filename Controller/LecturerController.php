@@ -1,7 +1,7 @@
 <?php
 
 class LecturerController extends AppController {
-  	var $uses = array('User', 'Lecturer','Question');	
+  	var $uses = array('User', 'Lecturer','Question','Lesson');	
   	public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add');
@@ -34,5 +34,15 @@ class LecturerController extends AppController {
 				'class' => 'alert-warning'
 			));
 		}
+	}
+	public function index(){
+		$user = $this->Auth->user();
+		if($user["role"] != 'lecturer'){
+			$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
+		}
+	}
+	public function lesson($value='')
+	{
+		# code...
 	}
 }
