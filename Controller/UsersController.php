@@ -22,7 +22,8 @@
 
 class UsersController extends AppController {
 	var $uses = array('User', 'Lecturer','Question');
-	public function beforeFilter() {
+    var $components = array("Auth");
+    public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add');
         $this->Auth->allow('verifycode');

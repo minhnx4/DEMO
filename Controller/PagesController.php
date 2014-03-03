@@ -24,7 +24,7 @@ class PagesController extends AppController {
 
 	public function beforeFilter($value='')
 	{
-	//	$this->Auth->allow("display");
+		$this->Auth->allow("display");
 	}
 /**
  * This controller does not use a model

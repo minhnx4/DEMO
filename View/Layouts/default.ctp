@@ -57,7 +57,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Student</a></li>
+                                <li><a href="/students/register">Student</a></li>
                                 <li><a href="/lecturer/add">Teacher</a></li>
                             </ul>
 						</li>
@@ -75,6 +75,6 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<?php echo $this->Html->script('bootstrap.min'); ?>
-
+    <?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

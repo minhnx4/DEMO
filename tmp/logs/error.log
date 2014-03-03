@@ -2688,3 +2688,603 @@ Stack Trace:
 #3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-03-02 12:02:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/elearning/Controller/StudentsController.php, line 21]
+2014-03-02 12:02:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 21, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 21, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 12:32:11 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/StudentsController.php, line 31]
+2014-03-02 12:32:11 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 31, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 31, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 12:32:32 Error: [MissingViewException] View file "/var/www/elearning/View/Students/profile.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Students/profile.ctp',
+)
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-02 12:39:52 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 12:39:52 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 12:41:52 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 12:41:52 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 12:41:56 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 12:41:56 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 12:42:18 Error: [MissingViewException] View file "/var/www/elearning/View/Students/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Students/index.ctp',
+)
+Request URL: /students
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-02 12:42:25 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 12:42:25 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:00:38 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 13:00:38 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:02:12 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 5]
+2014-03-02 13:02:12 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:06:09 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 6]
+2014-03-02 13:06:09 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 6, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 6, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:19:49 Error: Fatal Error (1): Call to a member function user() on a non-object in [/var/www/elearning/Controller/StudentsController.php, line 38]
+2014-03-02 13:19:49 Error: [FatalErrorException] Call to a member function user() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 38, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 38, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:19:53 Error: [MissingViewException] View file "/var/www/elearning/View/Students/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Students/index.ctp',
+)
+Request URL: /students/
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-02 13:20:15 Error: Fatal Error (1): Call to a member function login() on a non-object in [/var/www/elearning/Controller/StudentsController.php, line 32]
+2014-03-02 13:20:15 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 32, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 32, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:21:52 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:21:52 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:22:06 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:22:06 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:23:26 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:23:26 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:23:31 Error: [MissingControllerException] Controller class SuController could not be found.
+Exception Attributes: array (
+  'class' => 'SuController',
+  'plugin' => NULL,
+)
+Request URL: /su
+Stack Trace:
+#0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-02 13:23:38 Error: [MissingControllerException] Controller class SutudentsController could not be found.
+Exception Attributes: array (
+  'class' => 'SutudentsController',
+  'plugin' => NULL,
+)
+Request URL: /sutudents/register
+Stack Trace:
+#0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-02 13:23:43 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:23:43 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:24:08 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:24:08 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:24:13 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:24:13 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:24:15 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:24:15 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:24:26 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:24:26 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:25:07 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:25:07 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:25:49 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:25:49 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:26:16 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:26:16 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:26:39 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:26:39 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:31:09 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:31:09 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:31:12 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/UsersController.php, line 27]
+2014-03-02 13:31:12 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:43:09 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/StudentsController.php, line 8]
+2014-03-02 13:43:09 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 8, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 8, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 13:49:40 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-02 13:49:40 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /pages
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 14:02:47 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-02 14:02:47 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /pages
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 14:02:53 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/StudentsController.php, line 37]
+2014-03-02 14:02:53 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 37, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 37, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-02 14:15:02 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /var/www/elearning/View/Layouts/default.ctp(79): View->__get('Auth')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/var/www/elearn...')
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/var/www/elearn...', Array)
+#5 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(523): View->_render('/var/www/elearn...')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(468): View->renderLayout('', 'default')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-02 14:54:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`students`, CONSTRAINT `students_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/StudentsController.php(33): Model->save(Array)
+#5 [internal function]: StudentsController->register()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-02 14:54:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`students`, CONSTRAINT `students_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/StudentsController.php(33): Model->save(Array)
+#5 [internal function]: StudentsController->register()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-02 14:57:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`students`, CONSTRAINT `students_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/StudentsController.php(33): Model->save(Array)
+#5 [internal function]: StudentsController->register()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-02 14:58:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`students`, CONSTRAINT `students_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/StudentsController.php(33): Model->save(Array)
+#5 [internal function]: StudentsController->register()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-03 10:07:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`elearning`.`students`, CONSTRAINT `students_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/StudentsController.php(33): Model->save(Array)
+#5 [internal function]: StudentsController->register()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-03 10:29:57 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-03 10:29:57 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 10:30:06 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home
+Stack Trace:
+#0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-03 11:12:48 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-03 11:12:48 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 13:04:37 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-03 13:04:37 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 13:37:28 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/StudentsController.php, line 50]
+2014-03-03 13:37:28 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 50, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 50, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 13:37:46 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/var/www/elearning/View/Students/profile.ctp, line 10]
+2014-03-03 13:37:46 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 10, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 10, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 13:38:08 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/var/www/elearning/View/Students/profile.ctp, line 10]
+2014-03-03 13:38:08 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 10, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 10, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 13:38:48 Error: [MissingHelperException] Helper class studentHelper could not be found.
+Exception Attributes: array (
+  'class' => 'studentHelper',
+  'plugin' => false,
+)
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/HelperCollection.php(63): HelperCollection->load('student')
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(818): HelperCollection->__isset('student')
+#2 /var/www/elearning/View/Students/profile.ctp(8): View->__get('student')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/var/www/elearn...')
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/var/www/elearn...', Array)
+#5 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/elearn...')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-03 13:45:56 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/View/Students/profile.ctp, line 7]
+2014-03-03 13:45:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 7, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 7, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 14:05:20 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/elearning/View/Students/profile.ctp, line 18]
+2014-03-03 14:05:20 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 18, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 18, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 14:09:01 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/LecturerController.php, line 7]
+2014-03-03 14:09:01 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /lecturer/add
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 7, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 7, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 14:11:53 Error: Fatal Error (1): Call to a member function link() on a non-object in [/var/www/elearning/View/Students/profile.ctp, line 18]
+2014-03-03 14:11:53 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /students/profile
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 18, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 18, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 16:54:07 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-03 16:54:07 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 16:55:25 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/elearning/Controller/StudentsController.php, line 23]
+2014-03-03 16:55:25 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 23, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 23, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 17:21:15 Error: Fatal Error (1): Call to undefined function is_set() in [/var/www/elearning/View/Students/register.ctp, line 3]
+2014-03-03 17:21:15 Error: [FatalErrorException] Call to undefined function is_set()
+Request URL: /students/register
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/elearn...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/elearn...', 3, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/elearn...', 3, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 17:24:02 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/elearning/Controller/PagesController.php, line 27]
+2014-03-03 17:24:02 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 27, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
