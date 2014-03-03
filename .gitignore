@@ -1,3 +1,4 @@
 tmp/
 webroot/index.php
 webroot/test.php
+/nbproject/private/
