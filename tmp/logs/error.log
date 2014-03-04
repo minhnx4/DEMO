@@ -2688,3 +2688,798 @@ Stack Trace:
 #3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-03-03 16:25:02 Error: [MissingControllerException] Controller class ManagerController could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/manager/teacher
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-03 16:31:47 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Manager\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Manager\\index.ctp',
+)
+Request URL: /elearning/manager/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-03 16:36:04 Error: Fatal Error (1): Call to undefined method ManagerController::loadModule() in [E:\Installs\WebServer\htdocs\elearning\Controller\ManagerController.php, line 20]
+2014-03-03 16:36:04 Error: [FatalErrorException] Call to undefined method ManagerController::loadModule()
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\Installs\Web...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\Installs\Web...', 20, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\Installs\Web...', 20, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-03 16:44:51 Error: [MissingActionException] Action ManagerController::teacher() could not be found.
+Exception Attributes: array (
+  'controller' => 'ManagerController',
+  'action' => 'teacher',
+)
+Request URL: /elearning/manager/teacher
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-03 16:44:59 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('admins')
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#7 E:\Installs\WebServer\htdocs\elearning\Controller\ManagerController.php(21): Model->find('all')
+#8 [internal function]: ManagerController->manager()
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ManagerController), Array)
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-03 16:45:48 Error: [MissingTableException] Table admins for model admin was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'admins',
+  'class' => 'admin',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('admins')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#3 E:\Installs\WebServer\htdocs\elearning\Controller\ManagerController.php(21): Model->find('all')
+#4 [internal function]: ManagerController->manager()
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ManagerController), Array)
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-03-03 16:48:37 Error: [MissingTableException] Table admins for model admin was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'admins',
+  'class' => 'admin',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('admins')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#3 E:\Installs\WebServer\htdocs\elearning\Controller\ManagerController.php(21): Model->find('all')
+#4 [internal function]: ManagerController->manager()
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ManagerController), Array)
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-03-03 17:49:03 Error: [MissingHelperException] Helper class aaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'aaHelper',
+  'plugin' => false,
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\HelperCollection.php(63): HelperCollection->load('aa')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(818): HelperCollection->__isset('aa')
+#2 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(8): View->__get('aa')
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-03 17:57:00 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Manager\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Manager\\index.ctp',
+)
+Request URL: /elearning/manager/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 04:21:16 Error: [MissingControllerException] Controller class LectureController could not be found.
+Exception Attributes: array (
+  'class' => 'LectureController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/lecture
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 04:22:10 Error: Fatal Error (1): Call to a member function allow() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\LecturerController.php, line 7]
+2014-03-04 04:22:10 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /elearning/lecturer
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 7, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 7, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 04:38:52 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Manager\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Manager\\index.ctp',
+)
+Request URL: /elearning/manager/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 04:39:00 Error: [CakeException] Missing field name for FormHelper::validate
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(16): FormHelper->__call('validate', Array)
+#1 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(16): BoostCakeFormHelper->validate()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-03-04 04:47:49 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Manager\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Manager\\index.ctp',
+)
+Request URL: /elearning/manager/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 04:51:06 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('Manager', 'fields')
+#4 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(13): FormHelper->create('Manager', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 04:51:51 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('Manager', 'fields')
+#4 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(13): FormHelper->create('Manager', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 04:51:52 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('Manager', 'fields')
+#4 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(13): FormHelper->create('Manager', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 04:51:53 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('Manager', 'fields')
+#4 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(13): FormHelper->create('Manager', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 04:55:03 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('Manager', 'fields')
+#4 E:\Installs\WebServer\htdocs\elearning\View\Manager\manager.ctp(13): FormHelper->create('Manager', Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(929): include('E:\Installs\Web...')
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(891): View->_evaluate('E:\Installs\Web...', Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(460): View->_render('E:\Installs\Web...')
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManagerController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:00:35 Error: [MissingControllerException] Controller class ManagerController could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 05:00:46 Error: Fatal Error (64): Cannot redeclare class Manager in [E:\Installs\WebServer\htdocs\elearning\Model\Admin.php, line 27]
+2014-03-04 05:00:46 Error: [FatalErrorException] Cannot redeclare class Manager
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\Installs\Web...', 27)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\Installs\Web...', 27, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\Installs\Web...', 27, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 05:01:41 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\index.ctp',
+)
+Request URL: /elearning/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:02:07 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\index.ctp',
+)
+Request URL: /elearning/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:02:08 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\index.ctp',
+)
+Request URL: /elearning/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:02:15 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#5 [internal function]: AdminController->admin()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-04 05:03:41 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#5 [internal function]: AdminController->admin()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-04 05:03:43 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#5 [internal function]: AdminController->admin()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-04 05:03:44 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#5 [internal function]: AdminController->admin()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-04 05:07:19 Error: [MissingTableException] Table managers for model Manager was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'managers',
+  'class' => 'Manager',
+  'ds' => 'default',
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('managers')
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#5 [internal function]: AdminController->admin()
+#6 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-04 05:07:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Admin'
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#7 [internal function]: AdminController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:11:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Admin'
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#7 [internal function]: AdminController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:11:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Admin'
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#7 [internal function]: AdminController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:11:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Admin'
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#7 [internal function]: AdminController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:11:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Admin'
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminController.php(21): Model->find('all')
+#7 [internal function]: AdminController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 05:22:49 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\add_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\add_admin.ctp',
+)
+Request URL: /elearning/admin/addAdmin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:25:53 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\add_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\add_admin.ctp',
+)
+Request URL: /elearning/admin/addAdmin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:25:57 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\add_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\add_admin.ctp',
+)
+Request URL: /elearning/admin/addAdmin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:26:15 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\add_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\add_admin.ctp',
+)
+Request URL: /elearning/admin/addAdmin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 05:26:39 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admin\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admin\\index.ctp',
+)
+Request URL: /elearning/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 06:10:34 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:11:46 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:12:26 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:12:49 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:13:24 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:14:27 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 06:14:42 Error: [MissingActionException] Action AdminsController::add_admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'add_admin',
+)
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-04 07:56:59 Error: [MissingControllerException] Controller class ManagerController could not be found.
+Exception Attributes: array (
+  'class' => 'ManagerController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/manager/manager
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 08:05:50 Error: [CakeException] Unknown status code
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(785): CakeResponse->statusCode(Array)
+#1 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(36): Controller->redirect('admin', Array)
+#2 [internal function]: AdminsController->add_admin()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#6 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-04 08:06:30 Error: [CakeException] Unknown status code
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(785): CakeResponse->statusCode(Array)
+#1 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(37): Controller->redirect('admin', Array)
+#2 [internal function]: AdminsController->add_admin()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#6 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-04 08:08:21 Error: [CakeException] Unknown status code
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(785): CakeResponse->statusCode(Array)
+#1 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(37): Controller->redirect('admin', Array)
+#2 [internal function]: AdminsController->add_admin()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#6 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-04 08:17:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/admin/admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-04 09:04:42 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 48]
+2014-03-04 09:04:42 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 09:12:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 48]
+2014-03-04 09:12:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 09:12:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 48]
+2014-03-04 09:12:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 48, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 09:13:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 49]
+2014-03-04 09:13:28 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 49, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 49, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 09:16:09 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 49]
+2014-03-04 09:16:09 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 49, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 49, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 09:17:02 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admins\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admins\\index.ctp',
+)
+Request URL: /elearning/admins
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-04 09:19:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 'thanguyen6a'' at line 1
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('count', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(49): Model->find('count', Array)
+#7 [internal function]: AdminsController->add_admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-04 09:20:09 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 56]
+2014-03-04 09:20:09 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 56, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 56, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-04 10:04:48 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 58]
+2014-03-04 10:04:48 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 58, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 58, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

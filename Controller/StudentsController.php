@@ -17,7 +17,7 @@ class StudentsController extends AppController {
             $email = $this->data["Students"]["email"];
             $username = $this->data["Students"]["username"];
             $password = $this->data["Students"]["password"];
-            $repassword = $this->data['Students']['rePassword']
+            $repassword = $this->data['Students']['rePassword'];
             $credit_card_number = $this->data["Students"]["credit_card_number"];
             $answer_verifycode = $this->data["Students"]["answer_verifycode"];
             $birthday = $this->data["Students"]["birthday"];
