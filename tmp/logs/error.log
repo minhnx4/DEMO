@@ -3483,3 +3483,218 @@ Stack Trace:
 #3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-03-06 10:04:18 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 58]
+2014-03-06 10:04:18 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /elearning/admins/add_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 58, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 58, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-06 10:29:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 26]
+2014-03-06 10:29:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/admin/notify:%E3%81%93%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E5%90%8D%E3%81%8C%E5%AD%98%E5%9C%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-06 10:29:43 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 26]
+2014-03-06 10:29:43 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-06 10:29:54 Error: Fatal Error (1): Call to a member function find() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php, line 26]
+2014-03-06 10:29:54 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /elearning/admins/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 26, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-06 10:37:02 Error: [MissingViewException] View file "E:\Installs\WebServer\htdocs\elearning\View\Admins\remove_admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\Installs\\WebServer\\htdocs\\elearning\\View\\Admins\\remove_admin.ctp',
+)
+Request URL: /elearning/admins/remove_admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-06 10:47:38 Error: [MissingControllerException] Controller class ReMoveAdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'ReMoveAdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/re_move__admins/remove_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-06 10:49:01 Error: [MissingControllerException] Controller class ReMoveAdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'ReMoveAdminsController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/re_move__admins/remove_admin
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-07 08:47:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin/notify:%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(26): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 08:52:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin/notify:%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(26): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 08:52:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(26): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 08:54:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(26): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 08:54:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(26): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 09:27:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.admin_id' in 'on clause'
+Request URL: /elearning/admins/admin
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `admin`....', Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `admin`....', Array, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `admin`....', false)
+#4 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Admin), Array)
+#5 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 E:\Installs\WebServer\htdocs\elearning\Controller\AdminsController.php(28): Model->find('all')
+#7 [internal function]: AdminsController->admin()
+#8 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#9 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest), Object(CakeResponse))
+#11 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-07 09:27:34 Error: Fatal Error (1): Call to a member function allow() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\UsersController.php, line 27]
+2014-03-07 09:27:34 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /elearning/users/login
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-07 09:28:33 Error: Fatal Error (1): Call to a member function allow() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\UsersController.php, line 27]
+2014-03-07 09:28:33 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /elearning/users/login
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-07 09:28:55 Error: Fatal Error (1): Call to a member function allow() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\UsersController.php, line 27]
+2014-03-07 09:28:55 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /elearning/users/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-07 09:29:02 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/user/
+Stack Trace:
+#0 E:\Installs\WebServer\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-07 09:29:10 Error: Fatal Error (1): Call to a member function allow() on a non-object in [E:\Installs\WebServer\htdocs\elearning\Controller\UsersController.php, line 27]
+2014-03-07 09:29:10 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /elearning/users/
+Stack Trace:
+#0 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\Installs\Web...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#2 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\Installs\Web...', 27, Array)
+#3 E:\Workspace\Project\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -1,4 +1,64 @@
+<div class="row">
+	<?php echo $this->Session->flash(); ?>
+	<div class="col-md-8 col-md-offset-2">  
+	  
+	<?php echo $this->Form->create('User', array(  
+	  'inputDefaults' => array(  
+		'div' => false,  
+		'label' => false,  
+		'wrapInput' => false,  
+		'class' => 'form-control'  
+	  ),  
+	  'class' => 'well'  
+	)); ?>
+            
+	<div class="form-group">
+    	<?php echo $this->Form->input('username', array(  
+			'placeholder' => 'Email',  
+			'style' => 'width:180px;',
+			'label' => 'Username',
+		)); ?>  
+	</div>
+	<div class="form-group">
+    
+	  <?php echo $this->Form->input('password', array(  
+		'placeholder' => 'Password',  
+		'style' => 'width:180px;',
+		'label' => 'Password'
+	  )); ?>  
+	</div>
+
+	<div class="form-group">
+	  <?php echo $this->Form->input('Admin.email', array(  
+		'placeholder' => 'Email',  
+		'style' => 'width:180px;',
+		'label' => 'Email'
+	  )); ?>  
+	</div>
+            
+        <div class="form-group">
+	  <?php echo $this->Form->input('Admin.ip_address', array(  
+		'placeholder' => 'IP',  
+		'style' => 'width:180px;',
+		'label' => 'IP'
+	  )); ?>  
+	</div>
+
+	<?php echo $this->Form->submit('Sign up', array(  
+	'div' => false,  
+	'class' => 'btn btn-default'  
+	)); ?>  
+
+	<?php echo $this->Form->end(); ?>  
+	  
+	</div>  
+</div>  
+
+
 <?php
+
+
+
 
 /*
  * To change this template, choose Tools | Templates
@@ -9,16 +69,16 @@
 echo "<h1>新しいアカウントを追加</h1>";
 
 
-echo $this->Form->create('Admin',array("controller" => "admin","action" => "add_admin"));
-echo $this->Form->input("username",array("label" => "ユーザ名")); 
-echo $this->Form->input("password",array("label" => "パスワード")); 
-echo $this->Form->input("repassword",array("label" => "パスワードを再記入"));
-echo $this->Form->input("email",array("label" => "メール"));
-echo $this->Form->input("ip_address",array("label" => "IP アドレス"));
-echo $this->Form->button('add', array(  	
-        'value' => '追加',        
-        'type' => 'post',          
-	)); 
+echo $this->Form->create('User', array("controller" => "admin", "action" => "add_admin"));
+echo $this->Form->input("username", array("label" => "ユーザ名"));
+echo $this->Form->input("password", array("label" => "パスワード"));
+echo $this->Form->input("repassword", array("label" => "パスワードを再記入"));
+echo $this->Form->input("email", array("label" => "メール"));
+echo $this->Form->input("ip_address", array("label" => "IP アドレス"));
+echo $this->Form->button('add', array(
+    'value' => '追加',
+    'type' => 'post',
+));
 
 echo $this->Form->end();
 
@@ -29,27 +89,37 @@ if ($res != null) {
     $admins = $res[0];
     echo '<table width="500" align=left cellpadding="3" cellspacing = "2" border=1>';
     echo "<tr>";
-        
-       foreach($admins["admin"] as $key => $value)
-       {       
-        echo "<td>".$key."</td>";        
-       }       
-   
-    echo "</tr>";    
-    
-    foreach($res as $admin)
-    {
-        echo "<tr>";
-        $record = $admin["admin"];
-        echo "<td>".$record["id"]."</td>"; 
-        echo "<td>".$record["email"]."</td>";
-        echo "<td>".$record["ip_address"]."</td>"; 
-        echo "</tr>";
-    }   
-    echo "</table>";  
-    
-}
 
+    echo "<td> 順番 </td>";
+    foreach ($admins["admin"] as $key => $value) {
+        echo "<td>" . $key . "</td>";
+    }
+    echo "<td> 削除 </td>";
+    echo "</tr>";
+    $i = 1;
+     
+    foreach ($res as $admin) {
+        echo $this->Form->create('Admin', array("controller" => "admin", "action" => "remove_admin"));  
+        echo "<tr>";
+    
+        $record = $admin["admin"];
+        echo $this->Form->input("username", array("type" => "hidden","label" => "ユーザ名","value" => $record["username"]));
+        echo "<td>" . $i . "</td>";
+        echo "<td>" . $record["id"] . "</td>";
+        echo "<td>" . $record["username"] . "</td>";
+        echo "<td>" . $record["email"] . "</td>";
+        echo "<td>" . $record["ip_address"] . "</td>";
+        echo "<td>" . $this->Form->button('remove', array(
+            'value' => '追加',
+            'type' => 'post',
+        )) . "</td>";
+
+        echo "</tr>";
+        $i++;
+    }
+    echo $this->Form->end();
+    echo "</table>";
+}
 ?>
 
 
