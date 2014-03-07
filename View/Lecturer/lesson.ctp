@@ -3,7 +3,7 @@
 
 	<div class="col-xs-5 col-md-3">
 		<ul class="nav nav-pills nav-stacked">
-			<li><a href="#">Info </a></li>
+			<li><a href="/lecturer/">Class Manage </a></li>
 			<li class="active"><a href="#">New Class</a></li>
 			<li><a href="#">Messages</a></li>
 		</ul>

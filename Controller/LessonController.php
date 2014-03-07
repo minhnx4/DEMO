@@ -42,7 +42,6 @@ class LessonController extends AppController {
 				));	
 			}
     	}
-
     }
 
 }

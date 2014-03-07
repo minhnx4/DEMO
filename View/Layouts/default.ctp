@@ -78,6 +78,6 @@
 	<?php echo $this->Html->script('bootstrap.min'); ?>
 	<?php echo $this->Html->script('tagmanager'); ?>
 
-
+	<?php echo $this->Js->writeBuffer(); // Write cached scripts ?>
 </body>
 </html>
