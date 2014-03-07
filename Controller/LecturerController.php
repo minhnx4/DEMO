@@ -1,6 +1,7 @@
 <?php
 
 class LecturerController extends AppController {
+	var $name = "Lecturer";
   	var $uses = array('User', 'Lecturer','Question','Lesson');	
   	public function beforeFilter() {
         parent::beforeFilter();
@@ -43,6 +44,6 @@ class LecturerController extends AppController {
 	}
 	public function lesson($value='')
 	{
-		# code...
+		
 	}
 }

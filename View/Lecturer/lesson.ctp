@@ -21,6 +21,15 @@
 			)); ?>
 
 		<div class="form-group">
+			<?php echo $this->Form->input('id', array(  
+				'placeholder' => 'Class name',  
+				'style' => 'width:300px;',
+				'label' => 'Class name',
+				'type'  => 'hidden',
+			)); ?>  
+		</div>
+
+		<div class="form-group">
 			<?php echo $this->Form->input('name', array(  
 				'placeholder' => 'Class name',  
 				'style' => 'width:300px;',
@@ -37,7 +46,7 @@
 		</div>
 
 		<div class="form-group">
-			<?php echo $this->Form->text('tag', array(  
+			<?php echo $this->Form->text('Tag.name', array(  
 				'placeholder' => 'Tags',  
 				'style' => 'width:300px;',
 				'label' => 'Tags',

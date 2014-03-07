@@ -1,7 +1,14 @@
 <?php 
 class Lesson extends AppModel {
 	public $belongsTo="Lecturer";
-	public $hasAndBelongsToMany = "Tag";
+	public $hasAndBelongsToMany = array(
+        'Tag' => array(
+            'className' => 'Tag',
+            'joinTable' => 'lessons_tags',
+            'foreignKey' => 'lesson_id',
+            'associationForeignKey' => 'tag_id'
+        ));
+
     public $validate = array(
         'name' => array(
             'required' => array(
@@ -13,8 +20,7 @@ class Lesson extends AppModel {
             'lenght' => array(
                 'rule'    => array('maxLength', '2000'),
                 'message' => 'Maximum 2000 characters long'
-            ),
-                        
+            ),   
         )
     );
 

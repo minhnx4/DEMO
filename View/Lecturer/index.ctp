@@ -1,4 +1,6 @@
 <div class="row">
+	<?php echo $this->Session->flash(); ?>
+
 	<div class="col-xs-5 col-md-3">
 		<ul class="nav nav-pills nav-stacked" id="myTab">
 			<li class="active"><a href="#">New </a></li>
