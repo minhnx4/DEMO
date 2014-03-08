@@ -27,11 +27,7 @@ class User extends AppModel {
         ),
         'role' => array(
             'valid' => array(
-<<<<<<< HEAD
-                'rule' => array('inList', array('student', 'teacher', 'manager')),
-=======
                 'rule' => array('inList', array('student', 'lecturer','manager')),
->>>>>>> 63563c5d3e580d0f13a4e40224885bee889dc465
                 'message' => 'Please enter a valid role',
                 'allowEmpty' => false
             )
