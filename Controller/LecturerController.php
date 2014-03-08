@@ -3,7 +3,9 @@
 class LecturerController extends AppController {
 	var $name = "Lecturer";
   	var $uses = array('User', 'Lecturer','Question','Lesson');	
-	public $components = array('Paginator');
+
+	public $components = array('RequestHandler', 'Paginator');
+#	public $helpers = array('Js' => array('Jquery'), 'Paginator');
 
     
   	public function beforeFilter() {

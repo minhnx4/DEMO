@@ -34,7 +34,8 @@ class User extends AppModel {
     public $hasOne = array( 
             'Lecturer' => array(
             'className' => 'Lecturer',
-            'foreignKey' => 'id'
+            'foreignKey' => 'id',
+            'dependent' => true
             )
         );
 

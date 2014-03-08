@@ -9,12 +9,8 @@ class LessonController extends AppController {
     {
     	if($this->request->is('post')){
 	    	$data = ($this->request->data);
-			echo "<pre>";
-			var_dump($data);
 	    	$data['Lesson']['lecturer_id'] = $this->Auth->user('id');
-
 	    	$rawtags = explode(",",$data["hidden-data"]['Tag']['name']);
-
 	    	$tags = array();
 	    	foreach ($rawtags as $key => $value) {
 	    		var_dump($value);
@@ -43,5 +39,12 @@ class LessonController extends AppController {
 			}
     	}
     }
+    public function edit(){
+    	
+    }
 
+    public function delete($value='')
+    {
+    	
+    }
 }
