@@ -13,7 +13,7 @@
 class Admin extends AppModel {
 
     //put your code here
-    public $hasOne = 'User';
+    public $hasOne = 'User';    
     public $validate = array(
         'username' => array(
             'required' => array(

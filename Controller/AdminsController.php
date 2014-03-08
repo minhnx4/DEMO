@@ -12,11 +12,28 @@
  */
 class AdminsController extends AppController {
 
-    var $uses = array('User', 'Admin');
-
+   
+    var $uses = array('User', 'Admin' ,'Violate',);
+    var $paginate = array(
+        'limit' => 1,
+        'fields' =>array(),
+        'conditions' => array(
+            "User.actived" => 1,
+            "User.role" => "admin")
+        
+        //'order' => array(
+         //   'Violet.created' => 'desc',
+        //    'Violet.title' => 'asc'
+      //  )
+    );
+    
+    public $components = array('Paginator');
+    
+    
     //put your code here
     public function beforeFilter() {
         $this->Auth->allow("add_admin");
+        $this->Auth->allow("remove_admin");
     }
 
     public function index() {
@@ -33,6 +50,7 @@ class AdminsController extends AppController {
     }
 
     public function add_admin() {
+        
         if ($this->request->is('post')) {
             var_dump($this->request->data);
             if ($this->User->saveAll($this->request->data)) {
@@ -48,8 +66,7 @@ class AdminsController extends AppController {
             ));
         }
 
-
-//        if ($repassword != $password) {
+        //if ($repassword != $password) {
 //            $notify = "パスワードとリパスワードは違がいました";
 //            $this->redirect(array("controller" => "admins",
 //                "action" => "admin",
@@ -72,10 +89,22 @@ class AdminsController extends AppController {
 //            "notify" => $notify,
 //        ));
     }
+    
+           
 
     public function remove_admin() {
-        $params = $this->data["Remove_Admin"];
-        var_dump($params);
+       
+      // $res = $this->User->find('all',
+      //        array('conditions' => array("User.role" => "admin")));
+                 
+     //  echo "<pre>";
+     //  var_dump($res);
+     //  die();
+          
+       $this->Paginator->settings = $this->paginate;
+       $res = $this->Paginator->paginate("User");
+       $this->set('res',$res);
+       debug($res);
     }
 
 }

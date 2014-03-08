@@ -42,7 +42,7 @@ class Lecturer extends AppModel {
 				'rule' => array('notEmpty'),
 				'message' => 'A password is required'
 			)
-        ),
+                    ),
         'email' => array(
 	    	'email' => array(
 	        	'rule'    => array('email', true),
@@ -53,7 +53,7 @@ class Lecturer extends AppModel {
               'message' => 'This Username has already been used.'
             )
 	    ),
- 		'ip_address' =>  array(
+        'ip_address' =>  array(
  			'ip_address' => array(
      	   	'rule'    => array('ip', 'IPv4'), // or 'IPv6' or 'both' (default)
         	'message' => 'Please supply a valid IP address.'
