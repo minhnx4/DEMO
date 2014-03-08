@@ -64,7 +64,7 @@ class UsersController extends AppController {
 	        		$this->redirect(array('controller'=>'Users','action'=>'verifycode'));
 	        	}
 
-	            return $this->redirect($this->Auth->redirect());
+	            return $this->redirect(array('controller' => "lecturer", "action" => "index" ));
 	        }
 	        $this->Session->setFlash(__('Invalid username or password, try again'), 'alert', array(
 				'plugin' => 'BoostCake',
@@ -107,7 +107,8 @@ class UsersController extends AppController {
 				}
 				else
 					$this->Auth->logout();
-				return $this->redirect($this->Auth->redirect());
+
+	            return $this->redirect(array('controller' => "lecturer", "action" => "index" ));
 			}
 
 			$this->Session->setFlash(__('Invalid username or password, try again'), 'alert', array(
@@ -115,5 +116,12 @@ class UsersController extends AppController {
 				'class' => 'alert-warning'
 			));
 		}
+	}
+	public function permission($value='')
+	{
+		$this->Session->setFlash(__("You don't have permission to visit this page"), 'alert', array(
+		'plugin' => 'BoostCake',
+		'class' => 'alert-warning'
+		));
 	}
 }

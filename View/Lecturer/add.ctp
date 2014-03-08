@@ -19,7 +19,6 @@
 		)); ?>  
 	</div>
 	<div class="form-group">
-    
 	  <?php echo $this->Form->input('password', array(  
 		'placeholder' => 'Password',  
 		'style' => 'width:180px;',
