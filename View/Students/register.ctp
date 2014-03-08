@@ -1,8 +1,9 @@
+
 <div class="row">
     <?php echo $this->Session->flash(); ?>
     <div class="col-md-8 col-md-offset-2">  
 
-<?php echo $this->Form->create('Students', array(  
+<?php echo $this->Form->create('User', array(  
     'inputDefaults' => array(  
         'div' => false,  
         'label' => false,  
@@ -13,7 +14,7 @@
 )); ?> 
 
     <div class="form-group">
-<?php echo $this->Form->input('full_name', array(  
+<?php echo $this->Form->input('Student.full_name', array(  
     'placeholder' => 'Full name',  
     'style' => 'width:180px;',
     'label' => 'Full name',
@@ -44,14 +45,14 @@
 )); ?>  
     </div>
     <div class="form-group">
-<?php echo $this->Form->input('email', array(  
+<?php echo $this->Form->input('Student.email', array(  
     'placeholder' => 'Email',  
     'style' => 'width:180px;',
     'label' => 'Email'
 )); ?>  
     </div>
     <div class="form-group">
-<?php echo $this->Form->input('date_of_birth', array(  
+<?php echo $this->Form->input('Student.date_of_birth', array(  
     'type'=>'date',
     'placeholder' => 'Birthday', 
     //    'dateFormat'=>'DMY',
@@ -63,14 +64,14 @@
 )); ?>  
     </div>	
     <div class="form-group">
-<?php echo $this->Form->input('address', array(  
+<?php echo $this->Form->input('Student.address', array(  
     'placeholder' => 'Address',  
     'style' => 'width:180px;',
     'label' => 'Address',
 )); ?>  
     </div>	
     <div class="form-group">
-<?php echo $this->Form->input('phone_number', array(  
+<?php echo $this->Form->input('Student.phone_number', array(  
     'placeholder' => 'Phone',  
     'style' => 'width:180px;',
     'label' => 'Phone',
@@ -78,21 +79,21 @@
     </div>
 
     <div class="form-group">
-<?php echo $this->Form->input('credit_card_number', array(  
+<?php echo $this->Form->input('Student.credit_card_number', array(  
     'placeholder' => 'Credit Card Number',  
     'style' => 'width:180px;',
     'label' => 'Credit Card Number',
 )); ?>
     </div>  
     <div class="form-group">
-<?php echo $this->Form->input('question_verifycode_id', array(    
+<?php echo $this->Form->input('Student.question_verifycode_id', array(    
     'style' => 'width:180px;',
     'label' => 'Question',
     'options' => $droplist,
 )); ?>  
     </div>
     <div class="form-group">
-<?php echo $this->Form->input('answer_verifycode', array(  
+<?php echo $this->Form->input('Student.answer_verifycode', array(  
     'placeholder' => 'Answer',  
     'style' => 'width:180px;',
     'label' => 'Answer'

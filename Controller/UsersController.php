@@ -64,6 +64,10 @@ class UsersController extends AppController {
 	        	{
 	        		$this->redirect(array('controller'=>'Users','action'=>'verifycode'));
 	        	}
+	        	if($user['role'] == 'student')
+	        	{
+	        		$this->redirect(array('controller'=>'Students','action'=>'profile'));
+	        	}
 
 	            return $this->redirect($this->Auth->redirect());
 	        }

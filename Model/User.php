@@ -35,7 +35,12 @@ class User extends AppModel {
             'Lecturer' => array(
             'className' => 'Lecturer',
             'foreignKey' => 'id'
+            ),
+            'Student' => array(
+                'className' => 'Student',
+                'foreignKey' => 'id'
             )
+
         );
 
     public function beforeSave($options = array()) {
