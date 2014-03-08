@@ -67,3 +67,4 @@ class LecturerController extends AppController {
 		$this->set('results',$data);
 	}
 }
+

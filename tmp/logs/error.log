@@ -6780,3 +6780,13 @@ Request URL: /css/bootstrap-responsive.min.css
 Stack Trace:
 #0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-03-08 15:24:18 Error: Fatal Error (4): syntax error, unexpected T_SL, expecting T_FUNCTION in [/var/www/elearning/Controller/LecturerController.php, line 4]
+2014-03-08 15:24:18 Error: [FatalErrorException] syntax error, unexpected T_SL, expecting T_FUNCTION
+Request URL: /lecturer/
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 4, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 4, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

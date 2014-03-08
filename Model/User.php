@@ -34,11 +34,13 @@ class User extends AppModel {
     public $hasOne = array( 
             'Lecturer' => array(
             'className' => 'Lecturer',
-            'foreignKey' => 'id',
-            'dependent' => true
+            'foreignKey' => 'id'
+            ),
+            'Student' => array(
+                'className' => 'Student',
+                'foreignKey' => 'id'
             )
         );
-
     public function beforeSave($options = array()) {
         if (isset($this->data[$this->alias]['password'])) {
             $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);

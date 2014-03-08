@@ -15,7 +15,9 @@
 
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
-
+//定数を設定する
+define("USER_AGE_MAX", 100);
+define("USER_AGE_MIN", 10);
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
