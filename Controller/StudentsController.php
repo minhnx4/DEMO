@@ -64,7 +64,7 @@ class StudentsController extends AppController {
                         'plugin' => 'BoostCake',
                         'class' => 'alert-success'
                     ));
-                    return $this->redirect(array('controller' => 'user', 'action' => 'login'));
+                    return $this->redirect(array('controller' => 'users', 'action' => 'login'));
                 }
                 $this->Session->setFlash(__('The User could not be saved. Plz try again'), 'alert', array(
                     'plugin' => 'BoostCake',
