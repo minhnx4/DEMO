@@ -27,7 +27,7 @@ class User extends AppModel {
         ),
         'role' => array(
             'valid' => array(
-                'rule' => array('inList', array('student', 'lecturer','manager')),
+                'rule' => array('inList', array('student', 'lecturer','admin')),
                 'message' => 'Please enter a valid role',
                 'allowEmpty' => false
             )
@@ -40,7 +40,8 @@ class User extends AppModel {
         ),
         'Admin' => array(
             'className' => 'Admin',
-            'foreignKey' => 'id'
+            'foreignKey' => 'id',
+            'dependent' => true
         )
     );
 

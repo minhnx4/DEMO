@@ -12,53 +12,42 @@
  */
 class AdminsController extends AppController {
 
-   
-    var $uses = array('User', 'Admin' ,'Violate',);
+    var $uses = array('User', 'Admin', 'Violate',);
     var $paginate = array(
         'limit' => 1,
-        'fields' =>array(),
+        'fields' => array(),
         'conditions' => array(
             "User.actived" => 1,
             "User.role" => "admin")
-        
-        //'order' => array(
-         //   'Violet.created' => 'desc',
-        //    'Violet.title' => 'asc'
-      //  )
+
+            //'order' => array(
+            //   'Violet.created' => 'desc',
+            //    'Violet.title' => 'asc'
+            //  )
     );
-    
     public $components = array('Paginator');
-    
-    
+
     //put your code here
     public function beforeFilter() {
         $this->Auth->allow("add_admin");
         $this->Auth->allow("remove_admin");
     }
 
-    public function index() {
-        
-    }
-
-    public function admin() {
-        $this->loadModel('admin');
-        $res = $this->admin->find('all');
-        $this->set("res", $res);
-        $notify = $this->request->params["named"]["notify"];
-        if ($notify != null)
-            echo $notify;
-    }
+    public function index() {        
+    }    
 
     public function add_admin() {
-        
+
         if ($this->request->is('post')) {
-            var_dump($this->request->data);
+            $this->request->data["User"]["role"] = "admin";
+            $this->request->data["User"]["actived"] = 1;
             if ($this->User->saveAll($this->request->data)) {
+
                 $this->Session->setFlash(__('The user has been saved'), 'alert', array(
                     'plugin' => 'BoostCake',
                     'class' => 'alert-success'
                 ));
-                return $this->redirect(array('controller' => 'pages', 'action' => 'display'));
+                return $this->redirect(array('controller' => 'admins', 'action' => 'add_admin'));
             }
             $this->Session->setFlash(__('The User could not be saved. Plz try again'), 'alert', array(
                 'plugin' => 'BoostCake',
@@ -89,22 +78,21 @@ class AdminsController extends AppController {
 //            "notify" => $notify,
 //        ));
     }
-    
-           
 
     public function remove_admin() {
-       
-      // $res = $this->User->find('all',
-      //        array('conditions' => array("User.role" => "admin")));
-                 
-     //  echo "<pre>";
-     //  var_dump($res);
-     //  die();
-          
-       $this->Paginator->settings = $this->paginate;
-       $res = $this->Paginator->paginate("User");
-       $this->set('res',$res);
-       debug($res);
+        $this->Paginator->settings = $this->paginate;
+        $res = $this->Paginator->paginate("User");
+        $this->set('res', $res);
+        //debug($res);
+    }
+
+    public function remove_admin_process($id){
+        if ($this->User->delete($id))
+            $this->Session->setFlash(__('The admin has been deleted'), 'alert', array(
+                'plugin' => 'BoostCake',
+                'class' => 'alert-success'
+            ));
+        $this->redirect(array("action" => "remove_admin"));
     }
 
 }
