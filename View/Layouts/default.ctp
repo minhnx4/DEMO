@@ -12,6 +12,7 @@
 
 	<!-- Le styles -->
 	<?php echo $this->Html->css('bootstrap.min'); ?>
+	<?php echo $this->Html->css('style'); ?>
     <?php echo $this->Html->script('jquery-1.11.0.js');?>
     <style>
 	body {
