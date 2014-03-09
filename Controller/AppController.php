@@ -43,7 +43,6 @@ class AppController extends Controller {
 		)
 	),
 	'Session',
-	'DebugKit.Toolbar',
 	);
 
 

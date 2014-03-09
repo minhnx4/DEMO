@@ -1,7 +1,7 @@
 <?php 
 class LessonController extends AppController {
 	var $name = "Lesson";
-  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag');	
+  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag','LessonMembership');	
   	public function beforeFilter() {
         parent::beforeFilter();
     }
@@ -72,14 +72,14 @@ class LessonController extends AppController {
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 				));
-				return $this->redirect(array('controller' => 'Lecturer', 'action' => 'manage'));
 			}
 			else{
 				$this->Session->setFlash(__('The Lesson Info could not be saved. Plz try again'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-warning'
 				));	
-			}
+			}			
+			return $this->redirect($this->referer());
     	}
     }
 
@@ -99,6 +99,58 @@ class LessonController extends AppController {
 			));	
 
     	}
-		return $this->redirect(array('controller' => 'Lecturer', 'action' => 'manage'));
+		return $this->redirect($this->referer());
     }
+
+
+    public function deletestudent($value=''){
+    	$lesson_id = $this->params['named']['lesson_id'];
+    	$student_id = $this->params['named']['student_id'];
+
+    	$member = $this->LessonMembership->find("first",array(
+    				'conditions' => array('lesson_id' => $lesson_id ,'student_id' => $student_id )
+    			)
+    		);
+
+    	if($this->LessonMembership->delete($member['LessonMembership']['id'])){
+			$this->Session->setFlash(__('The User has been Removed'), 'alert', array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-success'
+			));
+    	}else{
+				$this->Session->setFlash(__('The User could not be deleted. Plz try again'), 'alert', array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-warning'
+			));	
+    	}
+		return $this->redirect($this->referer());
+
+    }
+
+    public function banstudent($value=''){
+    	$lesson_id = $this->params['named']['lesson_id'];
+    	$student_id = $this->params['named']['student_id'];
+
+    	$member = $this->LessonMembership->find("first",array(
+    				'conditions' => array('lesson_id' => $lesson_id ,'student_id' => $student_id )
+    			)
+    		);
+		$member['LessonMembership']['baned'] = !$member['LessonMembership']['baned'];
+
+    	if($this->LessonMembership->save($member)){
+			$this->Session->setFlash(__('The User has been Baned'), 'alert', array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-success'
+			));
+    	}else{
+				$this->Session->setFlash(__('The User could not be baned. Plz try again'), 'alert', array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-warning'
+			));	
+    	}
+		return $this->redirect($this->referer());
+
+    }
+
+
 }

@@ -8,7 +8,11 @@ class Lesson extends AppModel {
             'foreignKey' => 'lesson_id',
             'associationForeignKey' => 'tag_id'
         ));
-
+    public $hasMany = array(
+        'LessonMembership' => 
+            array('dependent' => True ),
+    );
+    
     public $validate = array(
         'name' => array(
             'required' => array(
