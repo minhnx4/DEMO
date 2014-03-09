@@ -12,31 +12,23 @@
  */
 class AdminsController extends AppController {
 
-    var $uses = array('User', 'Admin', 'Violate',);
-    var $paginate = array(
-        'limit' => 1,
-        'fields' => array(),
-        'conditions' => array(
-            "User.actived" => 1,
-            "User.role" => "admin")
-
-            //'order' => array(
-            //   'Violet.created' => 'desc',
-            //    'Violet.title' => 'asc'
-            //  )
-    );
+    //var $uses = array('User', 'Admin', 'Violate',);
     public $components = array('Paginator');
 
     //put your code here
     public function beforeFilter() {
         $this->Auth->allow("add_admin");
         $this->Auth->allow("remove_admin");
+        $this->Auth->allow("view_violation");
+        $this->Auth->allow("view_violation_content");
     }
 
-    public function index() {        
-    }    
+    public function index() {
+        
+    }
 
     public function add_admin() {
+        $this->uses = array('User', 'Admin');
 
         if ($this->request->is('post')) {
             $this->request->data["User"]["role"] = "admin";
@@ -80,19 +72,79 @@ class AdminsController extends AppController {
     }
 
     public function remove_admin() {
+        $this->uses = array('User', 'Admin');
+        $this->paginate = array(
+            'limit' => 1,
+            'fields' => array(),
+            'conditions' => array(
+                "User.actived" => 1,
+                "User.role" => "admin")
+        );
+
         $this->Paginator->settings = $this->paginate;
         $res = $this->Paginator->paginate("User");
         $this->set('res', $res);
         //debug($res);
     }
 
-    public function remove_admin_process($id){
+    public function remove_admin_process($id) {
+        $this->uses = array('User', 'Admin');
         if ($this->User->delete($id))
             $this->Session->setFlash(__('The admin has been deleted'), 'alert', array(
                 'plugin' => 'BoostCake',
                 'class' => 'alert-success'
             ));
         $this->redirect(array("action" => "remove_admin"));
+    }
+
+    public function view_violation() {
+        // $this->uses = array('Violate', 'Lecturer','Student','Document');
+        $this->uses = array('Violate');
+
+        $this->paginate = array(
+            'limit' => 1,
+            'fields' => array(),
+            'conditions' => array(
+                "Violate.accepted" => 0)
+        );
+
+        $this->Paginator->settings = $this->paginate;
+        $res = $this->Paginator->paginate("Violate");
+        $this->set('res', $res);
+    }
+
+    public function view_violation_content($id) {
+        $this->uses = array('Violate');
+        $res = $this->Violate->find('all', array('conditions' => array('Violate.id' => $id),
+        ));
+        $student_id = $res[0]['Violate']['student_id'];
+        $document_id = $res[0]['Violate']['document_id'];
+
+        $this->uses = array('Student');
+        $res = $this->Student->find('all', array('conditions' => array('Student.id' => $student_id),
+        ));
+        $student_fullname = $res[0]['Student']['full_name'];
+
+        $this->uses = array('Document');
+        $res = $this->Document->find('all', array('conditions' => array('Document.id' => $document_id),
+        ));
+        $lesson_id = $res[0]['Document']['lesson_id'];
+
+        $this->uses = array('Lesson');
+        $res = $this->Lesson->find('all', array('conditions' => array('Lesson.id' => $lesson_id),));
+        $lecturer_id = $res[0]['Lesson']['lecturer_id'];
+
+        $this->uses = array('User');
+       
+        $res = $this->User->find('all', array('conditions' => array(
+                'User.id' => $lecturer_id,
+             
+            ),
+        ));
+        debug($res);
+        //$lecturer_fullname = $res['User']['username'];
+       
+        //$this->uses = array('Violate', 'Lecturer', 'Student', 'Document');
     }
 
 }

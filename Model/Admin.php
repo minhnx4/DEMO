@@ -11,7 +11,6 @@
  * @author Tha
  */
 class Admin extends AppModel {
-
     //put your code here
     public $hasOne = 'User';    
     public $validate = array(
