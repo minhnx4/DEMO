@@ -1,7 +1,9 @@
 <?php 
 class LessonController extends AppController {
 	var $name = "Lesson";
-  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag');	
+  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag', 'Document', 'Test');
+  	public $components = array('RequestHandler', 'Paginator');
+
   	public function beforeFilter() {
         parent::beforeFilter();
     }
@@ -41,6 +43,7 @@ class LessonController extends AppController {
     }
     public function edit(){
     	$lesson_id = $this->params['named']['id'];
+    	//var_dump($lesson_id);
 		$Lesson = $this->Lesson->findById($lesson_id);
 		if (!$Lesson) {
 			$this->Session->setFlash(__('This Lesson not exist'), 'alert', array(
@@ -101,4 +104,55 @@ class LessonController extends AppController {
     	}
 		return $this->redirect(array('controller' => 'Lecturer', 'action' => 'manage'));
     }
+
+    public function detail_doc()
+	{	
+		$lession_id = $this->params['named']['id'];
+		$lession_id = 1;
+
+		$this->paginate = array(
+		    'fields' => array('Document.id', 'Document.link', 'Document.title'),
+			'limit' => 10,
+			'conditions' => array(
+				'Document.lesson_id' => $lession_id
+			)
+		);
+
+		$this->Paginator->settings = $this->paginate;
+		$data = $this->Paginator->paginate("Document");
+		$this->set('results',$data);
+	}
+
+	public function detail_test() {
+		$lesson_id = $this->params['named']['id'];
+		$lesson_id = 21;
+
+		$this->paginate = array(
+		    'fields' => array('Test.id', 'Test.test_time', 'Test.link', 'Test.title'),
+			'limit' => 10,
+			'conditions' => array(
+				'Test.lesson_id' => $lesson_id
+			)
+		);
+
+		$this->Paginator->settings = $this->paginate;
+		$data = $this->Paginator->paginate("Test");
+		$this->set('results', $data);
+	}
+
+	public function detail_coin() {
+
+	}
+
+	public function detail_std() {
+
+	}
+
+	public function summary() {
+
+	}
+
+	public function report() {
+		
+	}
 }

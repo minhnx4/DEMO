@@ -27,6 +27,7 @@
 			  	<td><?php echo($result['Lesson']['summary']) ?> </td>
 			  	<td><?php echo $this->html->link('Delete', array('controller' => 'lesson', 'action' => 'delete', "id"=>$result['Lesson']['id']),array('class' => 'button'))?>
 			  		<?php echo $this->html->link('Edit', array('controller' => 'lesson', 'action' => 'edit', "id"=>$result['Lesson']['id']),array('class' => 'button'))?>
+			  		<?php echo $this->html->link('Detail', array('controller' => 'lesson', 'action' => 'detail_doc', "id"=>$result['Lesson']['id']), array('class' => 'button'))?>
 			  	</td>
 			  </tr>
 			 <?php }?>

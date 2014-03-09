@@ -7405,3 +7405,1494 @@ Stack Trace:
 #3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-03-09 07:34:02 Error: [MissingTableException] Table lessons for model Lesson was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'lessons',
+  'class' => 'Lesson',
+  'ds' => 'default',
+)
+Request URL: /elearning/lecturer/manage
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('lessons')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\xampp\htdocs\elearning\Controller\LecturerController.php(90): PaginatorComponent->paginate('Lesson')
+#5 [internal function]: LecturerController->manage()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-09 07:35:14 Error: [MissingTableException] Table tags for model Tag was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tags',
+  'class' => 'Tag',
+  'ds' => 'default',
+)
+Request URL: /elearning/lecturer/manage
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('tags')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\xampp\htdocs\elearning\Controller\LecturerController.php(90): PaginatorComponent->paginate('Lesson')
+#6 [internal function]: LecturerController->manage()
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 07:35:15 Error: [MissingTableException] Table tags for model Tag was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tags',
+  'class' => 'Tag',
+  'ds' => 'default',
+)
+Request URL: /elearning/lecturer/manage
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('tags')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\xampp\htdocs\elearning\Controller\LecturerController.php(90): PaginatorComponent->paginate('Lesson')
+#6 [internal function]: LecturerController->manage()
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 07:39:11 Error: [MissingTableException] Table lesson for model Lesson was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'lesson',
+  'class' => 'Lesson',
+  'ds' => 'default',
+)
+Request URL: /elearning/lecturer/manage
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('lesson')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\xampp\htdocs\elearning\Controller\LecturerController.php(90): PaginatorComponent->paginate('Lesson')
+#5 [internal function]: LecturerController->manage()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-09 07:39:12 Error: [MissingTableException] Table lesson for model Lesson was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'lesson',
+  'class' => 'Lesson',
+  'ds' => 'default',
+)
+Request URL: /elearning/lecturer/manage
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('lesson')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\xampp\htdocs\elearning\Controller\LecturerController.php(90): PaginatorComponent->paginate('Lesson')
+#5 [internal function]: LecturerController->manage()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-09 08:54:51 Error: [MissingActionException] Action LessonController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'index',
+)
+Request URL: /lesson/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 08:57:19 Error: [MissingActionException] Action LessonController::edi() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'edi',
+)
+Request URL: /lesson/edi
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 09:16:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+Request URL: /Lesson/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Tag`.`i...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Tag`.`i...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Tag`.`i...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Tag), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(800): DboSource->query('findByName', Array, Object(Tag))
+#8 C:\xampp\htdocs\elearning\Controller\LessonController.php(17): Model->__call('findByName', Array)
+#9 C:\xampp\htdocs\elearning\Controller\LessonController.php(17): Tag->findByName('v??n')
+#10 [internal function]: LessonController->add()
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#12 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-03-09 09:21:55 Error: [MissingActionException] Action LecturerController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'view',
+)
+Request URL: /lecturer/view
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 09:48:27 Error: Fatal Error (1): Call to a member function query() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 96]
+2014-03-09 09:48:27 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /lecturer/file_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 09:49:12 Error: Fatal Error (1): Call to a member function query() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 96]
+2014-03-09 09:49:12 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 09:49:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.id' in 'field list'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Lesson')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 09:49:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.id' in 'field list'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Lesson')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 09:50:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.id' in 'field list'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Lesson')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 09:50:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.id' in 'field list'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Lesson')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 09:50:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.id' in 'field list'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Lesson')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 09:51:32 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:51:34 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:51:47 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:51:48 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:52:14 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:52:15 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:52:15 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:15 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:16 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:48 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:49 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:49 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:50 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:50 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:50 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:50 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:53:50 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:55:51 Error: [MissingActionException] Action LecturerController::doc_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'doc_info',
+)
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 09:55:59 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:57:18 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:19 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:19 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:20 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:20 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:20 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:20 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:20 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(97): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:54 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:55 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:55 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:55 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:56 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:56 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:57:57 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate('Document', Array, Array)
+#1 C:\xampp\htdocs\elearning\Controller\LecturerController.php(98): Controller->paginate('Document')
+#2 [internal function]: LecturerController->doc_info()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-09 09:58:23 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 09:59:25 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:59:27 Error: [MissingModelException] Document
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#1 [internal function]: LecturerController->doc_info()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 09:59:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.lession_id' in 'where clause'
+Request URL: /lecturer/doc_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Documen...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Documen...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Documen...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Document), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LecturerController.php(105): PaginatorComponent->paginate('Document')
+#8 [internal function]: LecturerController->doc_info()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 10:09:54 Error: [MissingActionException] Action LecturerController::file_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'file_info',
+)
+Request URL: /lecturer/file_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 10:37:25 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:19:23 Error: [MissingControllerException] Controller class Vn07Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Vn07Controller',
+  'plugin' => NULL,
+)
+Request URL: /vn07/
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:19:29 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /news/
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:19:34 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /news/manager/
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:21:43 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /news
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:22:41 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /news/
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:24:44 Error: [MissingControllerException] Controller class NewsController could not be found.
+Exception Attributes: array (
+  'class' => 'NewsController',
+  'plugin' => NULL,
+)
+Request URL: /news/
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 16:29:47 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Lecturer\docif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Lecturer\\docif.ctp',
+)
+Request URL: /lecturer/docif
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 16:30:07 Error: [MissingActionException] Action LessonController::doc_detail() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'doc_detail',
+)
+Request URL: /lesson/doc_detail/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:30:44 Error: [MissingActionException] Action LessonController::detail_doc() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_doc',
+)
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:31:55 Error: [MissingActionException] Action LessonController::detail_doc() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_doc',
+)
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:32:55 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 120]
+2014-03-09 16:32:55 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 120)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 120, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 120, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 16:33:20 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 120]
+2014-03-09 16:33:20 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 120)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 120, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 120, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 16:33:57 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Lesson\\detail_doc.ctp',
+)
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 16:36:02 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:47:44 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 33]
+2014-03-09 16:47:44 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 33, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 33, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 16:51:52 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 32]
+2014-03-09 16:51:52 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 32, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 32, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 16:55:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.id' in 'field list'
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Test`.`...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Test`.`...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Test`.`...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Document), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Document')
+#8 [internal function]: LessonController->detail_test()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 16:59:24 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Document\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Document\\delete.ctp',
+)
+Request URL: /Document/delete/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 16:59:32 Error: [MissingActionException] Action DocumentController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'edit',
+)
+Request URL: /Document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 16:59:42 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Document\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Document\\delete.ctp',
+)
+Request URL: /Document/delete/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:00:38 Error: [MissingActionException] Action DocumentController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'edit',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:00:44 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Document\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Document\\delete.ctp',
+)
+Request URL: /document/delete/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:00:50 Error: [MissingActionException] Action DocumentController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'edit',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:01:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.id' in 'field list'
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Test`.`...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Test`.`...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Test`.`...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Document), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Document')
+#8 [internal function]: LessonController->detail_test()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 17:01:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Test.id' in 'field list'
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Test`.`...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Test`.`...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Test`.`...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Document), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Document')
+#8 [internal function]: LessonController->detail_test()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 17:02:19 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(138): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:02:28 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(138): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:02:47 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:02:59 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:03:59 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:05:56 Error: [MissingModelException] Test
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Test')
+#1 [internal function]: LessonController->detail_test()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-09 17:06:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Document.lesson_id' in 'where clause'
+Request URL: /lesson/detail_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Test`.`...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Test`.`...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Test`.`...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Test), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\elearning\Controller\LessonController.php(139): PaginatorComponent->paginate('Test')
+#8 [internal function]: LessonController->detail_test()
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-03-09 17:09:41 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:09:53 Error: [MissingActionException] Action LecturerController::file_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'file_info',
+)
+Request URL: /lecturer/file_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:11:42 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:12:54 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:12:59 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:13:12 Error: [MissingActionException] Action LecturerController::test_info() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'test_info',
+)
+Request URL: /lecturer/test_info
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:25:20 Error: [MissingActionException] Action LessonController::detail_coin() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coin',
+)
+Request URL: /lesson/detail_coin
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:28:28 Error: [MissingActionException] Action LessonController::detail_coin() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coin',
+)
+Request URL: /lesson/detail_coin
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:28:31 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:29:12 Error: [MissingActionException] Action LessonController::detail_coin() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coin',
+)
+Request URL: /lesson/detail_coin
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:29:26 Error: [MissingActionException] Action LessonController::detail_coin() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coin',
+)
+Request URL: /lesson/detail_coin
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:33:46 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Lecturer\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Lecturer\\index.ctp',
+)
+Request URL: /lecturer/index
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:37:58 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 17:38:20 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 17:38:54 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 17:39:10 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:39:31 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:39:35 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:40:11 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:40:14 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 17:40:18 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:40:37 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:40:46 Error: [MissingActionException] Action LessonController::detail_coins() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coins',
+)
+Request URL: /lesson/detail_coins
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:41:21 Error: [MissingActionException] Action LessonController::report() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'report',
+)
+Request URL: /lesson/report
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:41:41 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:42:25 Error: [MissingActionException] Action LessonController::sumary() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'sumary',
+)
+Request URL: /lesson/sumary
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:43:13 Error: [MissingActionException] Action DocumentController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'edit',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:43:18 Error: [MissingActionException] Action DocumentController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'edit',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 17:43:53 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Document\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Document\\edit.ctp',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:45:50 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Document\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Document\\edit.ctp',
+)
+Request URL: /document/edit/id:00001
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:51:21 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Students\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Students\\index.ctp',
+)
+Request URL: /students/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:51:56 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Students\register.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Students\\register.ctp',
+)
+Request URL: /students/register
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 17:52:22 Error: [MissingControllerException] Controller class StudentController could not be found.
+Exception Attributes: array (
+  'class' => 'StudentController',
+  'plugin' => NULL,
+)
+Request URL: /student/register
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 17:52:27 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Students\register.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Students\\register.ctp',
+)
+Request URL: /students/register
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 18:16:04 Error: Fatal Error (4): syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE) in [C:\xampp\htdocs\elearning\Controller\TestController.php, line 4]
+2014-03-09 18:16:04 Error: [FatalErrorException] syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:16:16 Error: Fatal Error (4): syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE) in [C:\xampp\htdocs\elearning\Controller\TestController.php, line 4]
+2014-03-09 18:16:16 Error: [FatalErrorException] syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /test/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:16:20 Error: Fatal Error (4): syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE) in [C:\xampp\htdocs\elearning\Controller\TestController.php, line 4]
+2014-03-09 18:16:20 Error: [FatalErrorException] syntax error, unexpected 'uses' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 4, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:17:28 Error: [MissingActionException] Action LecturerController::upload_test() could not be found.
+Exception Attributes: array (
+  'controller' => 'LecturerController',
+  'action' => 'upload_test',
+)
+Request URL: /lecturer/upload_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 18:22:16 Error: Fatal Error (4): syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Test\add.ctp, line 44]
+2014-03-09 18:22:16 Error: [FatalErrorException] syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:22:26 Error: Fatal Error (4): syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Test\add.ctp, line 44]
+2014-03-09 18:22:26 Error: [FatalErrorException] syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:22:35 Error: Fatal Error (4): syntax error, unexpected ''style'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Test\add.ctp, line 44]
+2014-03-09 18:22:35 Error: [FatalErrorException] syntax error, unexpected ''style'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 18:43:42 Error: [MissingActionException] Action TestController::ada() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestController',
+  'action' => 'ada',
+)
+Request URL: /test/ada
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

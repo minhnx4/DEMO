@@ -1,95 +1,11 @@
-.upload .header {
+.main {
+	width: 800px;
+	margin: auto;
+}
+
+.head {
 	width: 980px;
 	height: 40px;
 	text-align: center;		
-	margin: 40px auto 20px;		
-}
-			
-textarea {	
-	width: 90%;
-	height: 100px;
-	padding: 5px;
-	margin-left: 20px;
-}
-
-.main-ul {	
-	width: 980px;	
-	padding: 10px 60px 10px 60px;
-	margin: auto;
-	border : 1px solid #AAC1D1;
-}
-
-.main-ul span {
-	float: left;
-	margin: 20px 20px 20px 20px;
-}
-
-.main-ul .text-input {
-	float: left;
-	margin-left: 20px;
-	width: 40%;
-	padding: 6px;
-  	border: #a9a9a9 1px solid;
-  	border-radius: 4px;
-}
-
-.main-ul .time-input {
-	float: left;
-	margin: 8px 20px;
-	width: 10%;
-	padding: 6px;
-  	border: #a9a9a9 1px solid;
-  	border-radius: 4px;
-}
-
-.main-ul .header {
-	margin-top: 30px;
-	text-align: center;
-}
-
-.main-ul input[type="file"] {
-	float: left;
-	
-	padding-top: 5px;
-}
-
-.main-ul input[type='button'] {
-	float: left;
-	margin: 7px 0px 0px 20px;
-}
-
-.main-ul input[type='submit'] {
-	float: left;	
-	margin: 7px 0px 0px 300px;
-}
-
-.main-ul input[type='reset'] {
-	float: left;
-	margin: 7px 0px 0px 40px;
-}
-
-.main-ul input[type='checkbox'] {
-	float: left;	
-	margin-left: 20px;
-}
-
-.main-ul p {
-	float: left;
-	margin: 0px 0px 0px 20px;
-}
-
-.main-ul h3 {
-	text-align: center;
-}
-
-.main-ul .tag {	
-	width: 100%;
-	height: 50px;	
-	margin: 10px 0px;
-}
-
-.main-ul .tag_ {	
-	width: 100%;
-	height: 50px;	
-	margin: 10px 20px 20px 20px;
+	margin: 20px auto 20px;		
 }
