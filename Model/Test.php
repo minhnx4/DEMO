@@ -1,6 +1,6 @@
 <?php
 class Test extends AppModel {
-	public $useTable = 'Test';
+	public $useTable = 'test';
 
 	public $validate = array(
 		'title' => array(

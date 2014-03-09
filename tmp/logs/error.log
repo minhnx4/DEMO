@@ -7365,3 +7365,43 @@ Stack Trace:
 #14 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
 #15 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 {main}
+2014-03-09 07:27:47 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 67]
+2014-03-09 07:27:47 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /elearning/lecturer/upload_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 07:28:48 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 67]
+2014-03-09 07:28:48 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /elearning/lecturer/upload_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 07:30:02 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 67]
+2014-03-09 07:30:02 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /elearning/lecturer/upload_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 07:30:43 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 67]
+2014-03-09 07:30:43 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /elearning/lecturer/upload_test
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 67, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
