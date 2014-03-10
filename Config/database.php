@@ -9,5 +9,4 @@ class DATABASE_CONFIG {
 		'password' => 'tuananh',
  		'database' => 'elearning'
 		);
-
 }

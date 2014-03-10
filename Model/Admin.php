@@ -1,11 +1,52 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+
+/**
+ * Description of ManagerModel
+ *
+ * @author Tha
  */
-App::uses('AppModel', 'Ip_admin');
-class  Admin extends AppModel{
-    var $name = 'admin';
+class Admin extends AppModel {
+
+    //put your code here
+    public $hasOne = 'User';    
+    public $validate = array(
+        'username' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A username is required'
+            )
+        ),
+        'password' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A password is required'
+            )
+        ),
+        'repassword' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A password is required'
+            )
+        ),
+       'email' => array(
+           'email' => array(
+               'rule' => array('email', true),
+               'message' => 'Please supply a valid email address.'
+           ),
+           'isUnique' => array(
+               'rule' => 'isUnique',
+               'message' => 'This Username has already been used.'
+           )
+       ),
+       'ip_address' => array(
+           'ip_address' => array(
+               'rule' => array('ip', 'IPv4'), // or 'IPv6' or 'both' (default)
+               'message' => 'Please supply a valid IP address.'
+           )
+       ),
+    );
+
 }
+
 ?>
