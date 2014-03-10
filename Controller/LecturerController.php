@@ -2,13 +2,15 @@
 
 class LecturerController extends AppController {
 	var $name = "Lecturer";
-  	var $uses = array('User', 'Lecturer','Question','Lesson','LessonMembership');	
+  	var $uses = array('User', 'Lecturer','Question','Lesson', 'Test', 'Document', 'LessonMembership');	
 
-	public $components = array('RequestHandler', 'Paginator');
-	    
+	public $components = array('RequestHandler', 'Paginator');		
+	#public $helpers = array('Js' => array('Jquery'), 'Paginator');
+    
+
   	public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('add');
+        $this->Auth->allow(array('add', 'upload_test', 'manage', 'view'));
     }
 
     public function add(){
@@ -40,16 +42,19 @@ class LecturerController extends AppController {
 			));
 		}
 	}
+	
 	public function index(){
 		$user = $this->Auth->user();
 		if($user["role"] != 'lecturer'){
 			$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
 		}
 	}
+
 	public function lesson($value='')
 	{
 		
-	}
+	}	
+
 	public function manage($value='')
 	{
 		$this->paginate = array(
@@ -64,6 +69,7 @@ class LecturerController extends AppController {
 		$data = $this->Paginator->paginate("Lesson");
 		$this->set('results',$data);
 	}
+
 
 
 	public function studentmanage()
@@ -84,4 +90,3 @@ class LecturerController extends AppController {
 		$this->set("results",$students);
 	}
 }
-

@@ -3,11 +3,15 @@
 
 	<div class="col-xs-5 col-md-3">
 		<ul class="nav nav-pills nav-stacked" id="myTab">
-			<li class="active"><a href="/lecturer/">Class Manager</a></li>
-			<li><a href="/lecturer/lesson">New Class</a></li>
-			<li><a href="#">Messages</a></li>
+			<li><a href="/lesson/detail_doc">ファイル情報</a></li>
+			<li><a href="/lesson/detail_test">テスト情報</a></li>
+			<li><a href="/lesson/detail_coins">課金情報</a></li>
+			<li class="active"><a href="/lesson/detail_std">学生リスト</a></li>
+			<li><a href="/lesson/summary">サマリー情報</a></li>
+			<li><a href="/lesson/report">レポート</a></li>
 		</ul>
 	</div>
+
 	<div class="col-xs-13 col-md-9">
 		<div class="well">
 			<?php echo $this->Paginator->pagination(array(

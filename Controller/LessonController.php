@@ -1,13 +1,17 @@
 <?php 
 class LessonController extends AppController {
 	var $name = "Lesson";
-  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag','LessonMembership');	
+
+  	var $uses = array('User', 'Lecturer','Question','Lesson','Tag', 'Document', 'Test', 'LessonMembership');
+  	public $components = array('RequestHandler', 'Paginator');
+
   	public function beforeFilter() {
         parent::beforeFilter();
     }
+
     public function add($value='')
     {
-    	if($this->request->is('post')){
+    	if($this->request->is('post')) {
 	    	$data = ($this->request->data);
 	    	$data['Lesson']['lecturer_id'] = $this->Auth->user('id');
 	    	$rawtags = explode(",",$data["hidden-data"]['Tag']['name']);
@@ -41,6 +45,7 @@ class LessonController extends AppController {
     }
     public function edit(){
     	$lesson_id = $this->params['named']['id'];
+    	//var_dump($lesson_id);
 		$Lesson = $this->Lesson->findById($lesson_id);
 		if (!$Lesson) {
 			$this->Session->setFlash(__('This Lesson not exist'), 'alert', array(
@@ -49,7 +54,7 @@ class LessonController extends AppController {
 			));	
 			return $this->redirect(array('controller' => 'Lecturer', 'action' => 'manage'));		
 		}
-		$this->set("id",$lesson_id);
+		$this->set("id", $lesson_id);
 
     	if($this->request->is('post')){
 	    	$data = ($this->request->data);
@@ -127,6 +132,96 @@ class LessonController extends AppController {
 
     }
 
+
+    public function detail_doc()
+	{			
+		$user = $this->Auth->user();
+		$lesson_id = $this->params['named']['id'];
+		$this->set("id", $lesson_id);			
+
+		if($user["role"] == 'lecturer') {
+			$lesson_id = $this->params['named']['id'];
+			$sql = array("conditions"=> array("Lesson.id =" => $lesson_id, "Lesson.lecturer_id =" => $user['id']));
+			$result = $this->Lesson->find('first',$sql);
+
+			if($result != NULL) {
+				$this->paginate = array(
+				    'fields' => array('Document.id', 'Document.link', 'Document.title'),
+					'limit' => 10,
+					'conditions' => array(
+						'Document.lesson_id' => $lesson_id
+					)
+				);
+
+				$this->Paginator->settings = $this->paginate;
+				$data = $this->Paginator->paginate("Document");
+				$this->set('results', $data);				
+			} else {
+				$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
+			}
+		} else {
+			$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
+		}		
+	}
+
+	public function detail_test() {
+		$lesson_id = $this->params['named']['id'];
+		$this->set("id", $lesson_id);
+		$user = $this->Auth->user();
+		
+		if($user["role"] == 'lecturer') {
+			$lesson_id = $this->params['named']['id'];
+			$sql = array("conditions"=> array("Lesson.id =" => $lesson_id, "Lesson.lecturer_id =" => $user['id']));
+			$result = $this->Lesson->find('first',$sql);
+
+			if($result != NULL) {
+				$this->paginate = array(
+				    'fields' => array('Test.id', 'Test.title', 'Test.test_time','Test.link'),
+					'limit' => 10,
+					'conditions' => array(
+						'Test.lesson_id' => $lesson_id
+					)
+				);
+
+				$this->Paginator->settings = $this->paginate;
+				$data = $this->Paginator->paginate("Test");
+				$this->set('results', $data);
+			} else {
+				$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
+			}
+		} else {
+			$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
+		}		
+	}
+
+	public function detail_coin() {
+
+	}
+
+	public function detail_std() {
+		$lesson_id = $this->params['named']['lesson_id'];
+		$lesson = $this->Lesson->findById($lesson_id);
+		$this->paginate = array(
+		    'fields' => array('Student.full_name','Student.id','LessonMembership.baned','LessonMembership.liked','LessonMembership.lesson_id'),
+			'limit' => 10,
+			'conditions' => array(
+			 	'LessonMembership.lesson_id' => $lesson_id),
+			'contain' => array('Student')
+		);
+
+		$this->LessonMembership->Behaviors->load('Containable');
+		$students = $this->Paginator->paginate("LessonMembership");
+		$this->set("results",$students);
+	}
+
+	public function summary() {
+
+	}
+
+	public function report() {
+		
+	}
+
     public function banstudent($value=''){
     	$lesson_id = $this->params['named']['lesson_id'];
     	$student_id = $this->params['named']['student_id'];
@@ -151,6 +246,4 @@ class LessonController extends AppController {
 		return $this->redirect($this->referer());
 
     }
-
-
 }

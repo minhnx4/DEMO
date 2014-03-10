@@ -1,6 +1,6 @@
 <?php
-class Document extends AppModel {
-	public $name = 'document';
+class Test extends AppModel {
+	public $useTable = 'test';
 
 	public $validate = array(
 		'title' => array(
@@ -15,12 +15,12 @@ class Document extends AppModel {
 				'message' => 'Title is required'
 			)
 		),
-		'cb' => array(
+		'test_time' => array(
 			'required' => array(
 				'rule' => array('notEmpty'),
 				'message' => 'Title is required'
 			)
-		),			
+		),		
 	);
 }
 ?>
