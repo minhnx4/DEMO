@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
 
+
 /**
  * Description of ManagerModel
  *
@@ -51,5 +52,6 @@ class Admin extends AppModel {
     );
 
 }
+
 
 ?>

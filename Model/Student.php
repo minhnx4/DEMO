@@ -1,4 +1,5 @@
 <?php
+
 class Student extends AppModel{
     public $validate = array(
         'full_name' => array(
@@ -62,6 +63,7 @@ class Student extends AppModel{
             'rule'    => array('maxLength', 1005),
         ),
     );
+
 
 }
 ?>
