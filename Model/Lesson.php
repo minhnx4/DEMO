@@ -1,6 +1,6 @@
 <?php 
 class Lesson extends AppModel {
-	public $belongsTo="Lecturer";
+/*	public $belongsTo="Lecturer";
 	public $hasAndBelongsToMany = array(
         'Tag' => array(
             'className' => 'Tag',
@@ -23,6 +23,6 @@ class Lesson extends AppModel {
             ),   
         )
     );
-
+ */
 
 }

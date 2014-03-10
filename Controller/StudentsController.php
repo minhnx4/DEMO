@@ -109,4 +109,19 @@ class StudentsController extends AppController {
         $student = $this->Student->find('first', array('conditions'=>array('Student.id'=>$id)));  
         $this->set('student', $student['Student']);
     }
+
+    public function history(){
+        $user_id = $this->Auth->user("id");
+        $this->LoadModel("StudentsLesson");
+        $options['fields'] = array("Lesson.*", "StudentsLesson.*");
+        $options['conditions'] = array("student_id"=>$user_id);
+        $options['joins'] = array(
+            array("table"=>"lessons", "alias"=>"Lesson", "conditions"=>array("Lesson.id = StudentsLesson.lesson_id"))
+        );
+        $res = $this->StudentsLesson->find("all", $options);
+        $this->set("history", $res);
+
+
+     //   debug($res);
+    }
 }

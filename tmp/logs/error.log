@@ -7225,3 +7225,1200 @@ Stack Trace:
 #1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-03-08 16:08:43 Error: [MissingControllerException] Controller class LessonsController could not be found.
+Exception Attributes: array (
+  'class' => 'LessonsController',
+  'plugin' => NULL,
+)
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-08 16:37:19 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3449): ConnectionManager::getDataSource('default')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3471): Model->setSource('users')
+#5 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/Helper/FormHelper.php(207): Model->schema()
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/Helper/FormHelper.php(459): FormHelper->_introspectModel('User', 'fields')
+#8 /var/www/elearning/View/Users/login.ctp(13): FormHelper->create(Array)
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/var/www/elearn...')
+#10 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/var/www/elearn...', Array)
+#11 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/elearn...')
+#12 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#14 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-03-08 16:39:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Lecturer'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(14): Model->find('all', Array)
+#6 [internal function]: LessonsController->search()
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-08 17:06:37 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/elearning/View/Lessons/search.ctp, line 94]
+2014-03-08 17:06:37 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 17:09:57 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/elearning/View/Lessons/search.ctp, line 94]
+2014-03-08 17:09:57 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 17:12:05 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/elearning/View/Lessons/search.ctp, line 94]
+2014-03-08 17:12:05 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 17:13:04 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/elearning/View/Lessons/search.ctp, line 94]
+2014-03-08 17:13:04 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 17:14:30 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/elearning/View/Lessons/search.ctp, line 94]
+2014-03-08 17:14:30 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 94, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 17:55:44 Error: [MissingActionException] Action StudentsController::history() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'history',
+)
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-08 18:15:45 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/elearning/Controller/LessonsController.php, line 29]
+2014-03-08 18:15:45 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 29, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 29, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 18:16:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/elearning/Controller/LessonsController.php, line 48]
+2014-03-08 18:16:39 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 48, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 48, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 18:17:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(31): Model->find('all', Array)
+#6 [internal function]: LessonsController->search()
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-08 18:27:59 Error: Fatal Error (4): syntax error, unexpected $end, expecting '`' in [/var/www/elearning/Controller/LessonsController.php, line 60]
+2014-03-08 18:27:59 Error: [FatalErrorException] syntax error, unexpected $end, expecting '`'
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 60, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 60, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 21:22:59 Error: [MissingViewException] View file "/var/www/elearning/View/Students/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Students/index.ctp',
+)
+Request URL: /students/
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-08 21:41:40 Error: Fatal Error (4): syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in [/var/www/elearning/Controller/LessonsController.php, line 53]
+2014-03-08 21:41:40 Error: [FatalErrorException] syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 53, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 53, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 21:50:33 Error: [MissingActionException] Action LessonsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => 'search',
+)
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-08 23:05:11 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/elearning/Controller/LessonsController.php, line 34]
+2014-03-08 23:05:11 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /lessons/search?search_value=afef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 34, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 34, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 23:13:23 Error: Fatal Error (4): syntax error, unexpected T_ISSET, expecting '(' in [/var/www/elearning/Controller/LessonsController.php, line 35]
+2014-03-08 23:13:23 Error: [FatalErrorException] syntax error, unexpected T_ISSET, expecting '('
+Request URL: /lessons/search?search_value=fefef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 35, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 35, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 23:18:55 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/elearning/Controller/LessonsController.php, line 6]
+2014-03-08 23:18:55 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /lessons/search?search_value=fefef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 23:19:12 Error: Fatal Error (4): syntax error, unexpected T_IF in [/var/www/elearning/Controller/LessonsController.php, line 35]
+2014-03-08 23:19:12 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /lessons/search?search_value=fefef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 35, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 35, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-08 23:33:27 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/elearning/Controller/LessonsController.php, line 37]
+2014-03-08 23:33:27 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /lessons/search?search_value=fefef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 37, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 37, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 00:38:49 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/elearning/Controller/LessonsController.php, line 55]
+2014-03-09 00:38:49 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /lessons/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 00:57:53 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/show.ctp',
+)
+Request URL: /lessons/show
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 01:32:26 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/show.ctp',
+)
+Request URL: /lessons/show
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 01:34:22 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/show.ctp',
+)
+Request URL: /lessons/show
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 01:37:58 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/show.ctp',
+)
+Request URL: /lessons/show/00006
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 12:26:50 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/elearning/Controller/LessonsController.php, line 55]
+2014-03-09 12:26:50 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /lessons/show/00045
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 12:26:56 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/elearning/Controller/LessonsController.php, line 55]
+2014-03-09 12:26:56 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /lessons/show/00045
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 12:27:10 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/elearning/Controller/LessonsController.php, line 55]
+2014-03-09 12:27:10 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /lessons/show/00045
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 55, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 12:31:30 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 12:32:04 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 12:32:09 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 12:32:17 Error: [MissingActionException] Action LessonsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => 'index',
+)
+Request URL: /lessons/
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 14:08:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /lessons/show/00006
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lesson`...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lesson`...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lesson`...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(61): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00006')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 14:09:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /lessons/show/00006
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lesson`...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lesson`...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lesson`...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(61): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00006')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 14:15:56 Error: Fatal Error (4): syntax error, unexpected T_AS in [/var/www/elearning/View/Lessons/show.ctp, line 6]
+2014-03-09 14:15:56 Error: [FatalErrorException] syntax error, unexpected T_AS
+Request URL: /lessons/show/00006
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 14:16:20 Error: Fatal Error (4): syntax error, unexpected ':' in [/var/www/elearning/View/Lessons/show.ctp, line 6]
+2014-03-09 14:16:20 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /lessons/show/00006
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 6, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 14:29:32 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/elearning/View/Lessons/show.ctp, line 5]
+2014-03-09 14:29:32 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:27:15 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Document'
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(62): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 15:27:37 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Document'
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(62): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 15:29:00 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Document'
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(62): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 15:29:57 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Document'
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lecture...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lecture...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lecture...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(62): Model->find('all', Array)
+#6 [internal function]: LessonsController->show('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-09 15:33:22 Error: [MissingActionException] Action LessonsController::48() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => '48',
+)
+Request URL: /lessons/48
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-09 15:44:12 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/View/Lessons/show.ctp, line 17]
+2014-03-09 15:44:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /lessons/show/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 17, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 17, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:44:52 Error: [MissingControllerException] Controller class DocumentsController could not be found.
+Exception Attributes: array (
+  'class' => 'DocumentsController',
+  'plugin' => NULL,
+)
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-09 15:46:27 Error: [MissingViewException] View file "/var/www/elearning/View/Documents/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Documents/show.ctp',
+)
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 15:47:13 Error: [MissingViewException] View file "/var/www/elearning/View/Documents/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Documents/show.ctp',
+)
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-09 15:53:08 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/DocumentsController.php, line 5]
+2014-03-09 15:53:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:53:30 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/DocumentsController.php, line 5]
+2014-03-09 15:53:30 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:53:48 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/DocumentsController.php, line 5]
+2014-03-09 15:53:48 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:54:56 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/elearning/View/Documents/show.ctp, line 5]
+2014-03-09 15:54:56 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:55:05 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/elearning/View/Documents/show.ctp, line 5]
+2014-03-09 15:55:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-09 15:55:18 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/elearning/View/Documents/show.ctp, line 5]
+2014-03-09 15:55:18 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 5, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 11:15:20 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/var/www/elearning/Controller/DocumentsController.php, line 3]
+2014-03-10 11:15:20 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /documents/show/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 3, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 3, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 11:35:07 Error: [MissingActionException] Action LessonsController::history() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => 'history',
+)
+Request URL: /lessons/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:35:16 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:35:25 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:36:08 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:37:06 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:37:11 Error: [MissingActionException] Action StudentsController::search() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'search',
+)
+Request URL: /students/search
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 11:48:44 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/register.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/register.ctp',
+)
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 11:58:00 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/register.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/register.ctp',
+)
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 12:45:49 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 100]
+2014-03-10 12:45:49 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:46:24 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 100]
+2014-03-10 12:46:24 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:47:39 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 100]
+2014-03-10 12:47:39 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:47:42 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 100]
+2014-03-10 12:47:42 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 100, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:47:52 Error: [MissingTableException] Table student_lessons for model StudentLesson was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'student_lessons',
+  'class' => 'StudentLesson',
+  'ds' => 'default',
+)
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3471): Model->setSource('student_lessons')
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1220): Model->schema()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1183): Model->_setAliasData(Array)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1713): Model->set(Array)
+#5 /var/www/elearning/Controller/LessonsController.php(100): Model->save(Array)
+#6 [internal function]: LessonsController->register('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 12:50:15 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR, expecting ')' in [/var/www/elearning/Controller/LessonsController.php, line 99]
+2014-03-10 12:50:15 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR, expecting ')'
+Request URL: /lessons/register/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 99, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 99, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:53:20 Error: [MissingActionException] Action LessonsController::history() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => 'history',
+)
+Request URL: /lessons/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 12:54:33 Error: [MissingActionException] Action StudentsController::history() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'history',
+)
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 12:59:22 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/elearning/Controller/StudentsController.php, line 116]
+2014-03-10 12:59:22 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 116)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 116, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 116, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 12:59:50 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/elearning/Controller/StudentsController.php, line 118]
+2014-03-10 12:59:50 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 118, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 118, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:00:31 Error: [MissingViewException] View file "/var/www/elearning/View/Students/history.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Students/history.ctp',
+)
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 13:14:04 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/elearning/View/Students/history.ctp, line 11]
+2014-03-10 13:14:04 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 11, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 11, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:21:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /students/history
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Lesson`...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Lesson`...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Lesson`...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(AppModel), Array)
+#5 /var/www/elearning/Controller/StudentsController.php(121): Model->find('all', Array)
+#6 [internal function]: StudentsController->history()
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 13:44:35 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 13:46:32 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 13:46:53 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 13:48:39 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 14:04:17 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 14:04:43 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/learn.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/learn.ctp',
+)
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 14:07:41 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/elearning/Controller/LessonsController.php, line 129]
+2014-03-10 14:07:41 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 129)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 129, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 129, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:23:50 Error: [MissingActionException] Action DocumentsController::report() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentsController',
+  'action' => 'report',
+)
+Request URL: /documents/report/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 14:34:33 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/elearning/View/Documents/report.ctp, line 8]
+2014-03-10 14:34:33 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /documents/report/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 8, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 8, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:56:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /documents/report/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/DocumentsController.php(16): Model->save(Array)
+#5 [internal function]: DocumentsController->report('00001')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 14:59:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /documents/report/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/DocumentsController.php(16): Model->save(Array)
+#5 [internal function]: DocumentsController->report('00001')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 15:00:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /documents/report/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1832): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/elearning/Controller/DocumentsController.php(16): Model->save(Array)
+#5 [internal function]: DocumentsController->report('00001')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 15:00:31 Error: [MissingActionException] Action DocumentsController::learn() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentsController',
+  'action' => 'learn',
+)
+Request URL: /documents/learn/00001
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 17:33:43 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/like.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/like.ctp',
+)
+Request URL: /lessons/like/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 17:39:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StudentsLesson.like' in 'field list'
+Request URL: /lessons/like/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE `elearni...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/Database/Mysql.php(400): DboSource->execute('UPDATE `elearni...')
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2542): Mysql->update(Object(AppModel), Array, NULL, Array)
+#4 /var/www/elearning/Controller/LessonsController.php(137): Model->updateAll(Array, Array)
+#5 [internal function]: LessonsController->like('00048')
+#6 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 17:45:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 131]
+2014-03-10 17:45:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 131)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 131, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 131, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 17:58:46 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/elearning/Controller/LessonsController.php, line 137]
+2014-03-10 17:58:46 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/elearn...', 137)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/elearn...', 137, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/elearn...', 137, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 18:02:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Student...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Student...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(AppModel), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(137): Model->find('first', Array)
+#6 [internal function]: LessonsController->learn('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 18:07:22 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/LessonsController.php, line 138]
+2014-03-10 18:07:22 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 138)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 138, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 138, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 18:07:51 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/elearning/Controller/LessonsController.php, line 136]
+2014-03-10 18:07:51 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 136, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 136, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 18:14:14 Error: [MissingActionException] Action LessonsController::dislike() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonsController',
+  'action' => 'dislike',
+)
+Request URL: /lessons/dislike/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 18:32:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'field list'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Comment...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Comment...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(131): Model->find('all', Array)
+#6 [internal function]: LessonsController->learn('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 18:32:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'field list'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Comment...', Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Comment...', false)
+#4 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2875): DboSource->read(Object(Lesson), Array)
+#5 /var/www/elearning/Controller/LessonsController.php(131): Model->find('all', Array)
+#6 [internal function]: LessonsController->learn('00048')
+#7 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonsController), Array)
+#8 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 18:52:48 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ',' or ';' in [/var/www/elearning/View/Lessons/learn.ctp, line 78]
+2014-03-10 18:52:48 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ',' or ';'
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 78, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 78, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 19:11:32 Error: Fatal Error (1): Unsupported operand types in [/var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Router.php, line 801]
+2014-03-10 19:11:32 Error: [FatalErrorException] Unsupported operand types
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/var/www/Vendor...', 801)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/var/www/Vendor...', 801, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/var/www/Vendor...', 801, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 19:29:23 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/comment.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/comment.ctp',
+)
+Request URL: /lessons/comment/48/fefe
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 19:29:32 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/comment.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/comment.ctp',
+)
+Request URL: /lessons/comment/48/%20abf%20fefaeg%20%20%20%20%20%20%20%20%20%20%20%20%20%20fefef
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 19:33:01 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/elearning/Controller/LessonsController.php, line 162]
+2014-03-10 19:33:01 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /lessons/learn/00048
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/elearn...', 162)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/elearn...', 162, Array)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/elearn...', 162, Array)
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 19:33:23 Error: [MissingViewException] View file "/var/www/elearning/View/Lessons/comment.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/elearning/View/Lessons/comment.ctp',
+)
+Request URL: /lessons/comment/48/feafe
+Stack Trace:
+#0 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LessonsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/elearning/webroot/index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

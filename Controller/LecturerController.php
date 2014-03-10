@@ -6,7 +6,7 @@ class LecturerController extends AppController {
 
 	public $components = array('RequestHandler', 'Paginator');
 #	public $helpers = array('Js' => array('Jquery'), 'Paginator');
-
+    public $helpers = array('LeftMenu');
     
   	public function beforeFilter() {
         parent::beforeFilter();
