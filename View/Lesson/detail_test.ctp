@@ -13,7 +13,7 @@
 	</div>
 	<div class="col-xs-13 col-md-9">
 		<div class="well">			
-			<table class="table table-condensed">
+			<table class="table bordered-table">
 				<tr>
 					<td  class="col-sm-1"><?php echo $this->Paginator->sort('id'); ?></td>	
 					<td  class="col-sm-1">Title</td>	

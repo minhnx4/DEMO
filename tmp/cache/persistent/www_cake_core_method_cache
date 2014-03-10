@@ -1,2 +1,2 @@
-1394388077
-a:1:{s:4:"name";a:2:{s:32:"893e75909840cdff52a21a13ed0131e5";s:11:"`elearning`";s:32:"8c26997a12d021c0d78a85d4795d888b";s:6:"`test`";}}
+1394421799
+a:2:{s:4:"name";a:9:{s:32:"893e75909840cdff52a21a13ed0131e5";s:11:"`elearning`";s:32:"b8254cefbecb47f7b4ed9a97bd3501e3";s:11:"`Test`.`id`";s:32:"9675072960ffd10f7e221bb75f39d883";s:18:"`Test`.`test_time`";s:32:"bbe62b2d1509c0b2bda8719072a691e2";s:13:"`Test`.`link`";s:32:"691814eca95adc9486c385d711188a36";s:14:"`Test`.`title`";s:32:"8c26997a12d021c0d78a85d4795d888b";s:6:"`test`";s:32:"b92ec360583fdaab3cc87ce758d7552e";s:18:"`Test`.`lesson_id`";s:32:"63f9283e5da1175255a03d19b8dacd69";s:6:"`Test`";s:32:"47eb7bb09414c64f779510914712b6ee";s:7:"`count`";}s:6:"fields";a:2:{s:32:"9b3399c45db69534cb48c13df26042cb";a:4:{i:0;s:11:"`Test`.`id`";i:1;s:18:"`Test`.`test_time`";i:2;s:13:"`Test`.`link`";i:3;s:14:"`Test`.`title`";}s:32:"cdcf48eda5ba5cd165f6fb811a0fc654";a:1:{i:0;s:19:"COUNT(*) AS `count`";}}}

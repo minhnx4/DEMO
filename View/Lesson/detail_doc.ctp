@@ -16,7 +16,7 @@
 			<?php echo $this->Paginator->pagination(array(
 				'ul' => 'pagination'
 				)); ?>
-			<table class="table table-condensed">
+			<table class="zebra-striped table">
 				<tr>
 					<td  class="col-sm-1"><?php echo $this->Paginator->sort('id'); ?></td>	
 					<td  class="col-sm-1">Link</td>				

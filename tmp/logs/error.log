@@ -8914,3 +8914,23 @@ Request URL: /js/bootstrap-file-input-master
 Stack Trace:
 #0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-03-10 03:49:35 Error: [MissingActionException] Action LessonController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'index',
+)
+Request URL: /lesson/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 03:49:59 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
