@@ -8934,3 +8934,2266 @@ Request URL: /lession/detail_std
 Stack Trace:
 #0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-03-10 04:31:33 Error: [MissingActionException] Action DocumentController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'index',
+)
+Request URL: /document/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 04:35:59 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) in [C:\xampp\htdocs\elearning\Controller\LecturerController.php, line 5]
+2014-03-10 04:35:59 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION)
+Request URL: /lecturer/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 04:39:07 Error: [MissingTableException] Table students_lessons for model LessonMembership was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'students_lessons',
+  'class' => 'LessonMembership',
+  'ds' => 'default',
+)
+Request URL: /lecturer/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(3498): Model->setSource('students_lesson...')
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\xampp\htdocs\elearning\Controller\LecturerController.php(69): PaginatorComponent->paginate('Lesson')
+#6 [internal function]: LecturerController->manage()
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LecturerController), Array)
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-10 04:40:37 Error: [MissingActionException] Action DocumentController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'index',
+)
+Request URL: /document/
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 04:49:44 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_coins
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 04:49:56 Error: [MissingActionException] Action LessonController::detail_coins() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coins',
+)
+Request URL: /lesson/detail_coins
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 04:53:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(23): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 04:55:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(23): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 04:55:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(23): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 04:56:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(23): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 04:57:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(24): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 05:08:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(24): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 05:08:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(24): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 05:08:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(24): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 05:40:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 05:44:00 Error: [MissingActionException] Action DocumentController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'DocumentController',
+  'action' => 'upload',
+)
+Request URL: /document/upload
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 05:44:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 05:44:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 05:45:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 05:45:30 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\upload.ctp, line 2]
+2014-03-10 05:45:30 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/upload
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 05:45:31 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\upload.ctp, line 2]
+2014-03-10 05:45:31 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/upload
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 05:46:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 05:46:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 08:28:27 Error: Fatal Error (4): syntax error, unexpected ''laceholder'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:28:27 Error: [FatalErrorException] syntax error, unexpected ''laceholder'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:07 Error: Fatal Error (4): syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:07 Error: [FatalErrorException] syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:08 Error: Fatal Error (4): syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:08 Error: [FatalErrorException] syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:08 Error: Fatal Error (4): syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:08 Error: [FatalErrorException] syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:09 Error: Fatal Error (4): syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:09 Error: [FatalErrorException] syntax error, unexpected '"laceholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:14 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:14 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:51 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:51 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:52 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:52 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:52 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:52 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:29:53 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:29:53 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:31 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:31 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:32 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:32 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:32 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:32 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:32 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:32 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:32 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:32 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:30:33 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:30:33 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:12 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:12 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:34 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:34 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:34 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:34 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:34 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:34 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:54 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:54 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:55 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:55 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:55 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:55 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:55 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:55 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:31:56 Error: Fatal Error (4): syntax error, unexpected 'placeholder' (T_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:31:56 Error: [FatalErrorException] syntax error, unexpected 'placeholder' (T_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:32:23 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:32:23 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:32:25 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:32:25 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:32:25 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:32:25 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:32:25 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 08:32:25 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:33:09 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 15]
+2014-03-10 08:33:09 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:33:10 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 15]
+2014-03-10 08:33:10 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:33:11 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 15]
+2014-03-10 08:33:11 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:34:46 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 21]
+2014-03-10 08:34:46 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:34:56 Error: Fatal Error (4): syntax error, unexpected '"tyle"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 22]
+2014-03-10 08:34:56 Error: [FatalErrorException] syntax error, unexpected '"tyle"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:35:03 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 21]
+2014-03-10 08:35:03 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:39:32 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 19]
+2014-03-10 08:39:32 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 19, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 19, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:39:47 Error: Fatal Error (4): syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 19]
+2014-03-10 08:39:47 Error: [FatalErrorException] syntax error, unexpected '"placeholder"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 19, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 19, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:40:27 Error: Fatal Error (4): syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:40:27 Error: [FatalErrorException] syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:40:28 Error: Fatal Error (4): syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:40:28 Error: [FatalErrorException] syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:40:28 Error: Fatal Error (4): syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:40:28 Error: [FatalErrorException] syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:40:40 Error: Fatal Error (4): syntax error, unexpected '"label"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 21]
+2014-03-10 08:40:40 Error: [FatalErrorException] syntax error, unexpected '"label"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:25 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:25 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:27 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:27 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:27 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:27 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:27 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:27 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:27 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:27 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:57 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:57 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:58 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:58 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:58 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:58 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:59 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:59 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:59 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:59 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:41:59 Error: Fatal Error (4): syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 20]
+2014-03-10 08:41:59 Error: [FatalErrorException] syntax error, unexpected ''+					' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:53:46 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:53:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:07 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:07 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:54 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:54 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:55:55 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:55:55 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:56:09 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:56:09 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:56:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:56:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:56:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:56:11 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:56:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:56:11 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 08:56:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 08:56:11 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:04:24 Error: Fatal Error (4): syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:04:24 Error: [FatalErrorException] syntax error, unexpected '"style"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:06:08 Error: Fatal Error (4): syntax error, unexpected ''+' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:06:08 Error: [FatalErrorException] syntax error, unexpected ''+' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:06:26 Error: Fatal Error (4): syntax error, unexpected ''+' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:06:26 Error: [FatalErrorException] syntax error, unexpected ''+' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:00 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:00 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:02 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:02 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:02 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:02 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:02 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:02 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:02 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:02 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:07:02 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:07:02 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:08 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:08 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:19 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:19 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:20 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:20 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:20 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:20 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:21 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:21 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:21 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:08:21 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:08:36 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 12]
+2014-03-10 09:08:36 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:32:55 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 7]
+2014-03-10 09:32:55 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:32:57 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 7]
+2014-03-10 09:32:57 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:32:57 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 7]
+2014-03-10 09:32:57 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:32:57 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 7]
+2014-03-10 09:32:57 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:32:57 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 7]
+2014-03-10 09:32:57 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:33:37 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:33:37 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:33:38 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:33:38 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:33:38 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:33:38 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:33:38 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:33:38 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:00 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:00 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:00 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:00 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:01 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:01 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:01 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:01 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:01 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:34:01 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:40 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:34:40 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:41 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:34:41 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:41 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:34:41 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:41 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:34:41 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:34:41 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:34:41 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:35:07 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:35:07 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:35:08 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:35:08 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:35:08 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:35:08 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:07 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:07 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:08 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:08 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:08 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:08 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:09 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:09 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:09 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:09 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:09 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:09 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:36:09 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:36:09 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:12 Error: Fatal Error (4): syntax error, unexpected 'text' (T_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:37:12 Error: [FatalErrorException] syntax error, unexpected 'text' (T_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:13 Error: Fatal Error (4): syntax error, unexpected 'text' (T_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:37:13 Error: [FatalErrorException] syntax error, unexpected 'text' (T_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:13 Error: Fatal Error (4): syntax error, unexpected 'text' (T_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:37:13 Error: [FatalErrorException] syntax error, unexpected 'text' (T_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:13 Error: Fatal Error (4): syntax error, unexpected 'text' (T_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:37:13 Error: [FatalErrorException] syntax error, unexpected 'text' (T_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:14 Error: Fatal Error (4): syntax error, unexpected 'text' (T_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 9]
+2014-03-10 09:37:14 Error: [FatalErrorException] syntax error, unexpected 'text' (T_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:37:33 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 14]
+2014-03-10 09:37:33 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:28 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:28 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:29 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:29 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:30 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:30 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:30 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:30 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:30 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:30 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:57 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:57 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:58 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:58 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:38:58 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 13]
+2014-03-10 09:38:58 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:43:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:43:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:43:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:43:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:43:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:43:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:44:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:45:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:45:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:46:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:46:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:46:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:46:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:47:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 09:50:25 Error: Fatal Error (4): syntax error, unexpected ''onchange'' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\elearning\View\Document\add.ctp, line 65]
+2014-03-10 09:50:25 Error: [FatalErrorException] syntax error, unexpected ''onchange'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:55:35 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:55:35 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:55:39 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:55:39 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:55:40 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:55:40 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:55:54 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:55:54 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:56:07 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:56:07 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:56:16 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:56:16 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:56:31 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:56:31 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:56:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:56:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 09:56:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 38]
+2014-03-10 09:56:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 38, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:01:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 10:01:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 10:01:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/upload.js
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 10:06:57 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 18]
+2014-03-10 10:06:57 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:07:09 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 18]
+2014-03-10 10:07:09 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:07:17 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 18]
+2014-03-10 10:07:17 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:07:35 Error: [MissingControllerException] Controller class ElearningController could not be found.
+Exception Attributes: array (
+  'class' => 'ElearningController',
+  'plugin' => NULL,
+)
+Request URL: /elearning/lesson/add
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 10:09:18 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 18]
+2014-03-10 10:09:18 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:09:28 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\xampp\htdocs\elearning\Controller\DocumentController.php, line 18]
+2014-03-10 10:09:28 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 10:10:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(23): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 10:10:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(23): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 10:10:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(23): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 10:11:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(23): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 10:32:40 Error: [MissingActionException] Action LessonController::detail_coins() could not be found.
+Exception Attributes: array (
+  'controller' => 'LessonController',
+  'action' => 'detail_coins',
+)
+Request URL: /lesson/detail_coins
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-10 10:32:50 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_coins
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 10:33:17 Error: [MissingControllerException] Controller class LessionController could not be found.
+Exception Attributes: array (
+  'class' => 'LessionController',
+  'plugin' => NULL,
+)
+Request URL: /lession/detail_std
+Stack Trace:
+#0 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-10 11:25:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(26): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 11:30:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(26): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 11:49:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /Test/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Test), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\TestController.php(24): Model->save(Array)
+#5 [internal function]: TestController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TestController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 13:00:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(33): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 13:03:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(33): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 13:13:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'lesson_id' cannot be null
+Request URL: /document/add
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `el...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `el...')
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(1832): DboSource->create(Object(Document), Array, Array)
+#4 C:\xampp\htdocs\elearning\Controller\DocumentController.php(33): Model->save(Array)
+#5 [internal function]: DocumentController->add()
+#6 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentController), Array)
+#7 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DocumentController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-10 13:29:10 Error: [MissingViewException] View file "C:\xampp\htdocs\elearning\View\Lecturer\studentmanage.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\elearning\\View\\Lecturer\\studentmanage.ctp',
+)
+Request URL: /lecturer/studentmanage/lesson_id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LecturerController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-10 13:29:19 Error: Fatal Error (1): Call to undefined function user() in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 141]
+2014-03-10 13:29:19 Error: [FatalErrorException] Call to undefined function user()
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 141)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 141, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 141, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:30:33 Error: Fatal Error (4): syntax error, unexpected '[', expecting ')' in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 141]
+2014-03-10 13:30:33 Error: [FatalErrorException] syntax error, unexpected '[', expecting ')'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 141)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 141, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 141, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:39:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Lesson`...', Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Lesson`...', Array, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Lesson`...', false)
+#4 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2902): DboSource->read(Object(Lesson), Array)
+#5 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\elearning\Controller\LessonController.php(144): Model->find('first', Array)
+#7 [internal function]: LessonController->detail_doc()
+#8 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LessonController), Array)
+#9 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LessonController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\elearning\webroot\index.php(100): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-10 13:41:26 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 157]
+2014-03-10 13:41:26 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 157, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 157, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:43:06 Error: Fatal Error (1): Call to undefined function is() in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 145]
+2014-03-10 13:43:06 Error: [FatalErrorException] Call to undefined function is()
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 145)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 145, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 145, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:43:23 Error: Fatal Error (1): Call to undefined function is() in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 145]
+2014-03-10 13:43:23 Error: [FatalErrorException] Call to undefined function is()
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 145)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 145, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 145, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 13:53:58 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 7]
+2014-03-10 13:53:58 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:01:14 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:01:14 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:02:07 Error: Fatal Error (4): syntax error, unexpected '$id' (T_VARIABLE) in [C:\xampp\htdocs\elearning\Controller\LessonController.php, line 139]
+2014-03-10 14:02:07 Error: [FatalErrorException] syntax error, unexpected '$id' (T_VARIABLE)
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 139)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 139, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 139, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:02:34 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:02:34 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:03:30 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:03:30 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:03:31 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:03:31 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:05:47 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:05:47 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:07 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:07:07 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1/page:2
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:12 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 8]
+2014-03-10 14:07:12 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:36 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 16]
+2014-03-10 14:07:36 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 16]
+2014-03-10 14:07:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 16]
+2014-03-10 14:07:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 16]
+2014-03-10 14:07:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-10 14:07:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\elearning\View\Lesson\detail_doc.ctp, line 16]
+2014-03-10 14:07:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /lesson/detail_doc/id:1
+Stack Trace:
+#0 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\Vendor\pear-pear.cakephp.org\CakePHP\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

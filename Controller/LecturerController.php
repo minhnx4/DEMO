@@ -2,12 +2,12 @@
 
 class LecturerController extends AppController {
 	var $name = "Lecturer";
-  	var $uses = array('User', 'Lecturer','Question','Lesson', 'Test', 'Document');	
+  	var $uses = array('User', 'Lecturer','Question','Lesson', 'Test', 'Document', 'LessonMembership');	
 
 	public $components = array('RequestHandler', 'Paginator');		
 	#public $helpers = array('Js' => array('Jquery'), 'Paginator');
-
     
+
   	public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow(array('add', 'upload_test', 'manage', 'view'));
@@ -42,12 +42,14 @@ class LecturerController extends AppController {
 			));
 		}
 	}
+	
 	public function index(){
 		$user = $this->Auth->user();
 		if($user["role"] != 'lecturer'){
 			$this->redirect(array('controller' => 'users' ,"action" => "permission" ));
 		}
 	}
+
 	public function lesson($value='')
 	{
 		
@@ -66,5 +68,25 @@ class LecturerController extends AppController {
 		$this->Paginator->settings = $this->paginate;
 		$data = $this->Paginator->paginate("Lesson");
 		$this->set('results',$data);
+	}
+
+
+
+	public function studentmanage()
+	{
+
+		$lesson_id = $this->params['named']['lesson_id'];
+		$lesson = $this->Lesson->findById($lesson_id);
+		$this->paginate = array(
+		    'fields' => array('Student.full_name','Student.id','LessonMembership.baned','LessonMembership.liked','LessonMembership.lesson_id'),
+			'limit' => 10,
+			'conditions' => array(
+			 	'LessonMembership.lesson_id' => $lesson_id),
+			'contain' => array('Student')
+		);
+
+		$this->LessonMembership->Behaviors->load('Containable');
+		$students = $this->Paginator->paginate("LessonMembership");
+		$this->set("results",$students);
 	}
 }

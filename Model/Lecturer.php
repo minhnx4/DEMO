@@ -1,6 +1,11 @@
 <?php 
 class Lecturer extends AppModel {
-	public $hasOne = 'User';
+	public $belongsTo = array(
+		'User' => array(
+		    'className' => 'User',
+		    'foreignKey' => 'id'
+		)
+	);
 	public $hasMany = 'Lesson';
 	public $validate = array(
 		'full_name' => array(

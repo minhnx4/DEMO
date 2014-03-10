@@ -3,16 +3,37 @@
 
 	<div class="col-xs-5 col-md-3">
 		<ul class="nav nav-pills nav-stacked" id="myTab">
-			<li><a href="/lesson/detail_doc">ファイル情報</a></li>
-			<li class="active"><a href="/lesson/detail_test">テスト情報</a></li>
-			<li><a href="/lesson/detail_coin">課金情報</a></li>
-			<li><a href="/lesson/detail_std">学生リスト</a></li>
-			<li><a href="/lesson/summary">サマリー情報</a></li>
-			<li><a href="/lesson/report">レポート</a></li>
+			<li>
+				<?php echo $this->html->link('ファイル情報', array('controller' => 'lesson', 'action' => 'detail_doc',
+					'id' => $id));?> 
+			</li>
+			<li class="active">
+				<?php echo $this->html->link('テスト情報', array('controller' => 'lesson', 'action' => 'detail_test',
+					'id' => $id));?> 
+			</li>
+			<li>
+				<?php echo $this->html->link('課金情報', array('controller' => 'lesson', 'action' => 'detail_coin',
+					'id' => $id));?> 
+			</li>
+			<li>
+				<?php echo $this->html->link('学生リスト', array('controller' => 'lesson', 'action' => 'detail_std',
+					'id' => $id));?> 
+			</li>
+			<li>
+				<?php echo $this->html->link('サマリー情報', array('controller' => 'lesson', 'action' => 'sammary',
+					'id' => $id));?> 
+			</li>
+			<li>
+				<?php echo $this->html->link('レポート', array('controller' => 'lesson', 'action' => 'report',
+					'id' => $id));?> 
+			</li>			
 		</ul>
 	</div>
 	<div class="col-xs-13 col-md-9">
-		<div class="well">			
+		<div class="well">
+			<?php echo $this->Paginator->pagination(array(
+				'ul' => 'pagination'
+				)); ?>		
 			<table class="table bordered-table">
 				<tr>
 					<td  class="col-sm-1"><?php echo $this->Paginator->sort('id'); ?></td>	
@@ -35,9 +56,6 @@
 			  </tr>
 			 <?php }?>
 			</table>			
-		</div>
-		<?php echo $this->Paginator->pagination(array(
-				'ul' => 'pagination'
-				)); ?>
+		</div>		
 	</div>
 </div>

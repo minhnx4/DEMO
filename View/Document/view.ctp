@@ -1,6 +1,6 @@
 
 
-<?php echo $this->Form->create('Document',array(
+<?php echo $this->Form->create('Lesson',array(
 	'inputDefaults' => array(  
 		'div' => false,  
 		'label' => false,  
@@ -8,12 +8,12 @@
 		'class' => 'form-control'  
 		),  
 	'class' => 'well',
-    'url' => array('controller' => 'Document', 'action' => 'edit')
+    'url' => array('controller' => 'Lesson', 'action' => 'edit','id'=>$id)
+
     )); ?>
 
 
-
-<?php echo $this->Upload->edit('Document', $this->Form->fields['Document.id']);?>
+<?php echo $this->Upload->view('Document', 5); ?>
 
 
 <?php echo $this->Form->submit('Save', array(  

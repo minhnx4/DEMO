@@ -18,7 +18,9 @@
 				'class' => 'form-control'  
 				),  
 			'class' => 'well',
-		    'url' => array('controller' => 'Test', 'action' => 'add')
+		    'url' => array('controller' => 'Test', 'action' => 'add','id' => $id),
+		    'method' => 'post',
+		    'enctype' => 'multipart/form-data'
 			)); ?>
 
 			<div class="form-group">
