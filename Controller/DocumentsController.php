@@ -12,8 +12,6 @@ class DocumentController extends AppController {
 		if ($this->request->is('post')) {
 		$data = $this->request->data['Document'];
 
-		var_dump($data);
-
 		for($i=0; $i < 3; $i++) 
 		{			
 			if(is_uploaded_file($data['link'.$i]['tmp_name']))
@@ -44,14 +42,8 @@ class DocumentController extends AppController {
             	));	
 			}
 		}
->>>>>>> d1853dd9c39d50df334140bdd3a6fdc8a172ed4f:Controller/DocumentController.php
-	}
-	}
-<<<<<<< HEAD:Controller/DocumentsController.php
-=======
 
 	public function upload() {
-		
 	}
 
 	public function edit() {
@@ -61,6 +53,21 @@ class DocumentController extends AppController {
 	public function delete() {
 		$document_id = $this->params['named']['id'];
 	}
->>>>>>> d1853dd9c39d50df334140bdd3a6fdc8a172ed4f:Controller/DocumentController.php
+
+    public $helpers = array("TsvReader");
+    public function show($document_id){
+        $document = $this->Document->find("first", array("conditions"=>array("id"=>$document_id)));
+        $this->set("document", $document['Document']);
+    }
+    public function report($lesson_id,  $document_id){
+        $document = $this->Document->find("first", array("conditions"=>array("id"=>$document_id)));
+        $this->set("document", $document['Document']);
+        if ($this->request->is('post')){
+            $content = $this->data['report']['content'];
+            $this->loadModel("Violate");
+            $data = array("student_id"=>$this->Auth->user("id"), "document_id"=>"document_id", "content"=>$content, "accepted"=>0); 
+            $this->Violate->save($data);
+            $this->redirect(array("controller"=>"lessons","action"=>"learn",$lesson_id));  
+        }
+    }
 }
-?>

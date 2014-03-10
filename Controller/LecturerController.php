@@ -5,7 +5,7 @@ class LecturerController extends AppController {
   	var $uses = array('User', 'Lecturer','Question','Lesson', 'Test', 'Document', 'LessonMembership');	
 
 	public $components = array('RequestHandler', 'Paginator');		
-	#public $helpers = array('Js' => array('Jquery'), 'Paginator');
+    public $helpers = array('LeftMenu');
     
 
   	public function beforeFilter() {
@@ -74,7 +74,6 @@ class LecturerController extends AppController {
 
 	public function studentmanage()
 	{
-
 		$lesson_id = $this->params['named']['lesson_id'];
 		$lesson = $this->Lesson->findById($lesson_id);
 		$this->paginate = array(
