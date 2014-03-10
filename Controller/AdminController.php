@@ -202,7 +202,6 @@ class AdminController extends AppController{
             $this->redirect(array('action'=>'manage_student'));
         }
     }
-    
    public function reset_verifycode_student($id_student, $init_verifycode){
         //echo $id;
         //echo $init_password;
@@ -216,7 +215,6 @@ class AdminController extends AppController{
             $this->redirect(array('action'=>'manage_student'));
         }
     }
-    
     public function delete_student($id_student){
         $this->loadModel('Student');
         if(!$this->Student->delete($id_student)){
@@ -227,6 +225,5 @@ class AdminController extends AppController{
             $this->redirect(array('action'=>'manage_student'));
         }
     }    
-    
 }
 ?>

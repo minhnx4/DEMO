@@ -56,7 +56,6 @@ if (!defined('APP_DIR')) {
 
 define('CAKE_CORE_INCLUDE_PATH',  DS . 'var' . DS . 'www' . DS . 'Vendor' . DS . 'pear-pear.cakephp.org' . DS . 'CakePHP');
 
-
 /**
  * Editing below this line should NOT be necessary.
  * Change at your own risk.
