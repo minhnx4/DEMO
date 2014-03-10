@@ -34,11 +34,13 @@ class User extends AppModel {
     public $hasOne = array( 
             'Lecturer' => array(
             'className' => 'Lecturer',
-            'foreignKey' => 'id'
+            'foreignKey' => 'id',
+            'dependent' => true
             ),
             'Student' => array(
                 'className' => 'Student',
-                'foreignKey' => 'id'
+                'foreignKey' => 'id',
+                'dependent' => true
             )
         );
     public function beforeSave($options = array()) {
