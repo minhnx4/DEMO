@@ -32,7 +32,7 @@
 			<div class='form-group'>
 				<?php echo $this->Form->input('link', array( 
 					'type'=> 'file', 
-					'placeholder' => '',  
+					'placeholder' => 'ファイル',  
 					'class' => 'btn-file'
 				)); ?>
 			</div>
