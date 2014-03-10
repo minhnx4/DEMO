@@ -1,6 +1,6 @@
 <?php
 
-class DocumentController extends AppController {
+class DocumentsController extends AppController {
   	var $uses = array('User', 'Lecturer','Question','Lesson');	
 	public $components = array('Session', 'AjaxMultiUpload.Upload');
 
@@ -13,9 +13,6 @@ class DocumentController extends AppController {
 	{
 
 	}
-
-
-
 }
 
 ?>
