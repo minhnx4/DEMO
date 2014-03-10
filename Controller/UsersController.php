@@ -22,7 +22,8 @@
 
 class UsersController extends AppController {
 	var $uses = array('User', 'Lecturer','Question');
-	public function beforeFilter() {
+    var $components = array("Auth");
+    public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('add');
         $this->Auth->allow('verifycode');
@@ -62,6 +63,10 @@ class UsersController extends AppController {
 	        	if($user['role'] == 'lecturer' && $this->request->clientIp() != $user['Lecturer']['ip_address'])
 	        	{
 	        		$this->redirect(array('controller'=>'Users','action'=>'verifycode'));
+	        	}
+	        	if($user['role'] == 'student')
+	        	{
+	        		$this->redirect(array('controller'=>'Students','action'=>'profile'));
 	        	}
 
 	            return $this->redirect(array('controller' => "lecturer", "action" => "index" ));
