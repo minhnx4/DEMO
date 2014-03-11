@@ -12,6 +12,7 @@ class Lesson extends AppModel {
     public $hasMany = array(
         'LessonMembership' => 
             array('dependent' => True ),
+        'Document'
     );
     
     public $validate = array(

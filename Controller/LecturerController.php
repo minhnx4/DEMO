@@ -22,11 +22,12 @@ class LecturerController extends AppController {
      		$droplist[$question['Question']['id']] = $question['Question']['question'];
     	}
     	$this->set('droplist', $droplist);
+
 		if($this->request->is('post')){
 			$this->User->create();
 			$this->request->data['Lecturer']['ip_address'] = $this->request->clientIp();
+			$this->request->data['Lecturer']['init_verifycode'] = $this->request->data['Lecturer']['current_verifycode']; 
 			$this->request->data['User']['role'] = 'lecturer';
-
 			if($this->User->saveAll($this->request->data)){
 				$this->Session->setFlash(__('The user has been saved'), 'alert', array(
 					'plugin' => 'BoostCake',

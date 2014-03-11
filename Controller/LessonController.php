@@ -29,11 +29,12 @@ class LessonController extends AppController {
 	    	$data['Tag'] = $tags;
 			$this->Lesson->create();
 			if($this->Lesson->saveAll($data)){
+                $id = $this->Lesson->getInsertID();
 				$this->Session->setFlash(__('The Lesson has been saved'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 				));
-				return $this->redirect(array('controller' => 'Lecturer', 'action' => 'manage'));
+				return $this->redirect(array('controller' => 'Document', 'action' => 'add','id' =>  $id));
 			}
 			else{
 				$this->Session->setFlash(__('The User could not be saved. Plz try again'), 'alert', array(

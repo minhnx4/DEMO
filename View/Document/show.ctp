@@ -5,21 +5,6 @@ height: 650px;
 }
 </style>
 <script>
-/*
-$(document).mousedown(function(event){
-    if(event.which == 3){
-         console.log("bam chuot phai");
-    }
-});
-$(function(){
-    $.contextMenu({
-            selector: 'iframe', 
-            items:{
-            
-            }
-    });
-}
- */
 </script>
 <?php $this->LeftMenu->leftMenuStudent();?>
 
