@@ -12,9 +12,7 @@ class LecturerController extends AppController {
         parent::beforeFilter();
         $this->Auth->allow(array('add', 'upload_test', 'manage', 'view'));
     }
-
     public function add(){
-
     	if($this->Auth->loggedIn()){
       	  $this->redirect('/');
     	}
@@ -54,7 +52,6 @@ class LecturerController extends AppController {
 	{
 		
 	}	
-
 	public function manage($value='')
 	{
 		$this->paginate = array(
@@ -69,9 +66,6 @@ class LecturerController extends AppController {
 		$data = $this->Paginator->paginate("Lesson");
 		$this->set('results',$data);
 	}
-
-
-
 	public function studentmanage()
 	{
 		$lesson_id = $this->params['named']['lesson_id'];

@@ -13,7 +13,7 @@ class AdminController extends AppController{
     public function menu_manage(){
         
     }
-//以下はipアドレス管理の機能だ    
+
     public function add_ip_address(){
         $this->Session->write('id', '911');
         $id = $this->Session->read('id');

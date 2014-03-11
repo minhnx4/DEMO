@@ -105,7 +105,6 @@ class StudentsController extends AppController {
     public function profile(){
         $this->loadModel('Question');
         $id = $this->Auth->user("id");
-        echo ($id);    
         $student = $this->Student->find('first', array('conditions'=>array('Student.id'=>$id)));  
         $this->set('student', $student['Student']);
     }

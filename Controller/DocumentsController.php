@@ -67,7 +67,7 @@ class DocumentController extends AppController {
             $this->loadModel("Violate");
             $data = array("student_id"=>$this->Auth->user("id"), "document_id"=>"document_id", "content"=>$content, "accepted"=>0); 
             $this->Violate->save($data);
-            $this->redirect(array("controller"=>"lessons","action"=>"learn",$lesson_id));  
+            $this->redirect(array("controller"=>"lesson","action"=>"learn",$lesson_id));  
         }
     }
 }

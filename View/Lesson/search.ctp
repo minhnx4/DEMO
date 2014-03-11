@@ -34,17 +34,7 @@ form div.submit {
 $(document).ready(function(){
     $("#searchbt").click(function(){
         tag_value = $("#myinput").val();
-/*    console.log(tag_value);
-$.ajax({
-            type: "POST",
-                data: {"tag_value":　tag_value},
-                url: "<?php echo Router::url(array('controller'=>'lessons','action'=>'search_by_tag'));?>",
-        }).done(function (msg){
-            console.log("gia tri tra ve "+msg); 
-        }); 
- */
-        //   window.location= "<?php echo Router::url(array('controller'=>'lessons','action'=>'search_by_tag'));?>";
-        window.location = "/lessons/search?search_value="+tag_value; 
+        window.location = "/lesson/search?search_value="+tag_value; 
     });
 }); 
 </script>
@@ -78,24 +68,24 @@ if (isset($rank_stt)){
             foreach($lessons as $row){
                 $lesson = $row['Lesson'];
                 $lecturer = $row['Lecturer'];
-                $user = $row['User'];
+                $user = $row['Lecturer']['User'];
                 if ($flag==0){
                     echo $this->Html->tableHeaders(array("id", "先生", "授業の名前",  "アップロードの日")); 
                     $flag = 1;
                 }
-                echo $this->Html->tableCells(array($lesson['id'], $user['username'],  $this->Html->link($lesson['name'], array("controller"=>"lessons", "action"=>"show", $lesson['id'])),  $lesson['update_date'])); 
+                echo $this->Html->tableCells(array($lesson['id'], $user['username'],  $this->Html->link($lesson['name'], array("controller"=>"lesson", "action"=>"show", $lesson['id'])),  $lesson['update_date'])); 
             }
         }else if ($rank_stt==RANK_BY_LESSON){
             $flag =0;
             foreach($lessons as $row){
                 $lesson = $row['Lesson'];
                 $lecturer = $row['Lecturer'];
-                $user = $row['User'];
+                $user = $row['Lecturer']['User'];
                 if ($flag==0){
                     echo $this->Html->tableHeaders(array("id",  "授業の名前", "先生 のユーザ名", "先生の名前", "アップロードの日"));  
                     $flag = 1;
                 }
-                echo $this->Html->tableCells(array($lesson['id'],  $this->Html->link($lesson['name'], array("controller"=>"lessons", "action"=>"show",  $lesson['id'])), $user['username'], $lecturer['full_name'],  $lesson['update_date'])); 
+                echo $this->Html->tableCells(array($lesson['id'],  $this->Html->link($lesson['name'], array("controller"=>"lesson", "action"=>"show",  $lesson['id'])), $user['username'], $lecturer['full_name'],  $lesson['update_date'])); 
             }
 
         }else if ($rank_stt==RANK_BY_TAG){
@@ -109,22 +99,23 @@ if (isset($rank_stt)){
                     echo $this->Html->tableHeaders(array("id",  "タグ", "授業の名前", "先生のユーザ名", "先生の名前", "アップロードの日"));  
                     $flag = 1;
                 }
-                echo $this->Html->tableCells(array($lesson['id'], $tag['name'],  $this->Html->link($lesson['name'], array("controller"=>"lessons", "action"=>"show",  $lesson['id'])), $user['username'], $lecturer['full_name'],  $lesson['update_date'])); 
+                echo $this->Html->tableCells(array($lesson['id'], $tag['name'],  $this->Html->link($lesson['name'], array("controller"=>"lesson", "action"=>"show",  $lesson['id'])), $user['username'], $lecturer['full_name'],  $lesson['update_date'])); 
             }
         }
     }
 }else if (isset($lessons)){ //Truong hop search 
     $flag =0;
     foreach($lessons as $row){
-        $lesson = $row['Lesson'];
-        $lecturer = $row['Lecturer'];
-        $user = $row['User'];
+        $lessons = $row['Lesson'];
         $tag = $row['Tag'];
-        if ($flag==0){
-            echo $this->Html->tableHeaders(array("id", "タグ",   "授業の名前", "先生 のユーザ名", "先生の名前", "アップロードの日"));  
-            $flag = 1;
+        foreach ($lessons as $lesson) {
+            if ($flag==0){
+                echo $this->Html->tableHeaders(array("id", "タグ",   "授業の名前", "先生 のユーザ名", "先生の名前", "アップロードの日"));  
+                $flag = 1;
+            }
+            echo $this->Html->tableCells(array($lesson['id'],$tag['name'],   $this->Html->link($lesson['name'], array("controller"=>"lesson", "action"=>"show",$lesson['id'] )), $lesson['Lecturer']['User']['username'], $lesson['Lecturer']['full_name'],  $lesson['update_date'])); 
+        
         }
-        echo $this->Html->tableCells(array($lesson['id'],$tag['name'],   $this->Html->link($lesson['name'], array("controller"=>"lessons", "action"=>"show",$lessons['id'] )), $user['username'], $lecturer['full_name'],  $lesson['update_date'])); 
     }
 }
 ?>

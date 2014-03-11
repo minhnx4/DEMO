@@ -1,39 +1,9 @@
-<script>
-$(document).ready(function(){
-/*    $("#likeBt").click(function(){
-    $.ajax({
-            type: "POST",
-            //    data: {"les":　tag_value},
-                url: "<?php echo Router::url(array('controller'=>'lessons','action'=>'like'));?>",
-        }).done(function (msg){
-    //        console.log("gia tri tra ve "+msg); 
-     //           $("#debug").html("abcdef");
-            $("debug").html(msg);
-        }); 
-});*/
-/*
-    $("#commentIp").on("keypress", function(e){
-        if (e.which==13){
-            console.log("nut enter duoc bam");
-         /*   comment = $("#commentIp").val();
-            $.ajax({
-                type: "POST", 
-                data: {"comment":comment}, 
-                url:"<?php echo Router::url(array('controller'=>'lessons','action'=>'comment'));?>"
-            }).done(function(msg){
-                console.log(msg);
-        });
-            
-            window.location =    "<?php echo $lesson_id; ?>"; 
-        }
-});*/
-});
-
+<script type="text/javascript">
 function upcomment(event, lesson_id){
     if (event.keyCode==13){
         console.log("gia tri comment"+lesson_id);
         content = $("#commentIp").val();
-        window.location = "/lessons/comment/"+lesson_id+"/"+content;
+        window.location = "/lesson/comment/"+lesson_id+"/"+content;
     }
 }
 </script>
@@ -45,6 +15,7 @@ function upcomment(event, lesson_id){
     background: orange;
 }
 </style>
+
 <?php $this->LeftMenu->leftMenuStudent();?>
     <div class="col-xs-13 col-md-9 well">  
 <?php

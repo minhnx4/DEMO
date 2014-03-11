@@ -15,7 +15,7 @@ class LeftMenuHelper extends AppHelper{
             <div class='col-xs-5 col-md-3'>
             <ul class='nav nav-pills nav-stacked'>
             <li><a href='/students/profile'> プロファイル管理 </a></li>
-            <li class='active'><a href='/lessons/search'>授業を選択</a></li>
+            <li class='active'><a href='/lesson/search'>授業を選択</a></li>
             <li><a href='/students/history'>勉強の歴史</a></li>
             </ul>
             </div>"; 
