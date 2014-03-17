@@ -59,7 +59,7 @@ class LecturerController extends AppController {
 	{
 		$this->paginate = array(
 		    'fields' => array('Lesson.id', 'Lesson.Name','Lesson.summary'),
-			'limit' => 1,
+			'limit' => 5,
 			'conditions' => array(
 				'Lesson.lecturer_id' => $this->Auth->user('id')
 			)
@@ -88,7 +88,7 @@ class LecturerController extends AppController {
 		);
 
 		$this->LessonMembership->Behaviors->load('Containable');
-		$students = $this->Paginator->paginate("LessonMembership");
+		$students = $this->paginate("LessonMembership");
 		$this->set("results",$students);
 	}
 }

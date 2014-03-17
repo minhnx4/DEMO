@@ -31,7 +31,7 @@ class DocumentController extends AppController {
 	                    'plugin' => 'BoostCake',
 	                    'class' => 'alert-warning'));      
 	        }
- 		$this->redirect(array('controller' => 'Lecturer'));	
+ 		$this->redirect(array('controller' => 'lecturer'));	
 		}
 	}
 
