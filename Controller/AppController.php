@@ -11,7 +11,6 @@
  */
 
 App::uses('Controller', 'Controller');
-
 /**
  * Application Controller
  *
@@ -21,6 +20,7 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+
 class AppController extends Controller {
 
 	public $helpers = array(
@@ -29,4 +29,20 @@ class AppController extends Controller {
 		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
 		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
 	);
+	public $components = array(
+	'Auth' => array(
+		'flash' => array(
+			'element' => 'alert',
+			'key' => 'auth',
+			'params' => array(
+				'plugin' => 'BoostCake',
+				'class' => 'alert-error'
+			),
+			'loginRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+       		'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+		)
+	),
+	'Session',
+	);
+
 }
