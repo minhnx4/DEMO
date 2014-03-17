@@ -78,5 +78,6 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<?php echo $this->Html->script('bootstrap.min'); ?>
 	<?php echo $this->Html->script('tagmanager'); ?>
+	<?php echo $this->Js->writeBuffer(); ?>
 </body>
 </html>
